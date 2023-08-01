@@ -1,15 +1,107 @@
-# vSphere 8 - What's New?! 
-
-
-
-# vSphere-7u3-Upgrade-to-8u1 - WIP
-
-Tips, tricks, gotchas and important dates collected by a friendly VMware TAM
-
-## vSphere 8 u1 highlights
+# vSphere 8 & 8u1 Highlights - What's New?! 
 
 Share blog posts and videos highlighting the new features/capabilities of vSphere 8u1
 
+## vSphere Distributed Services Engine
+
+- Improves infrastructure performance   
+- Simplifies DPU lifecycle management  
+- Boosts infrastructure security  
+
+### Prior to the Data Processing Unit Isolation  
+Data Processing Units do exist in versions previous to vSphere 8.  They live in the hardware layer, similar to a PCIe device like a NIC or GPU. Networking, storage and host management services run in the instance of ESXi virtualizing the x86 compute layer    
+<img width="727" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/a38fad20-5c47-4cd2-ad88-a415b518e3cb">
+
+### Emergence of the Data Processing Unit - Isolation Layer
+In vSphere 8, an additional instance of ESXi is installed directly on the Data Processing Unit. This allows ESXi services to be offloaded to the DPU for increased performance  
+<img width="727" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/390fd0b9-7889-4b2d-a049-f2de4a1bb354">
+
+
+## vSphere with Tanzu
+
+<img width="584" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/667f409f-962f-4fcf-8812-6a7e6a880a06">
+
+- Unified Tanzu Kubernetes Grid  
+- Increased availability with vSphere Zones  
+- Declarative cluster lifecycle with ClusterClass  
+- Customize PhotonOS or Ubuntu images  
+- Pinniped Integration
+
+## Lifecycle Management
+### Deprecation Awareness - vSphere 8 last version of vSphere Update Manager (VUM)  
+- DPU Support  
+- Faster Cluster Remediation with Staging Support and Parallel Remediation  
+<img width="586" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/6d54bb6a-3844-4513-a6b8-cf183b4d91d8"> <img width="310" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/99013fcb-3e37-4db6-8f66-45ede84e634b">  
+<img width="586" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/06a31e6e-5baf-4611-94eb-fc7c015de755"> <img width="310" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/6aa295a9-7800-4532-97f3-aea46d9df2c6">  
+
+- Enhanced Recovery of vCenter - Recover vCenter without data loss & Reconcile Cluster Membership After Restore  
+<img width="440" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/1eca31e3-2724-49f3-bd32-df3145a4e6a7"> <img width="310" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/3f55ceb3-12f9-4692-ae3a-845997f13bc0">  
+<img width="373" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/75a423e5-7ee6-428c-ad94-72eb822fa14c"> <img width="310" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/349ebed1-bf5c-4a99-8bb0-2b64073f996d">  
+
+- vSphere Configuration Profiles - Configuration Management at Scale
+
+<img width="565" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/ec9cd842-1a97-4538-9874-646ce0b59d73"> <img width="310" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/a743103e-1d5a-4208-b1cf-acd98985f3c8">  
+
+## Artificial Intelligence & Machine Learning
+
+
+- Unified Management for AI/ML Hardware Accelerators
+<img width="548" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/b849d683-f7b4-413a-a628-310492285b5b">
+
+- Simplified Hardware Consumption with Device Groups
+<img width="876" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/08237491-228d-4a5b-96ac-a858b9a7616b">
+
+- Introducing Next-Generation of Virtual Hardware Devices - Device Virtualization Extensions (DVX)
+<img width="829" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/efb68d61-e16f-4724-8ac7-3e4750ef9752">    
+
+## Guest OS and Workloads
+
+- Virtual Hardware Version 20  
+<img width="897" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/8c7d29d4-1181-4c5f-9b73-d2fc40c2a14a">  
+
+- Virtual TPM Provisioning Policy - Deploy Windows 11 at Scale  
+<img width="915" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/3f2b4248-0a88-4e3d-a242-5cee0fe22c68">  
+  
+- Migration-aware Applications - Introducing vSphere vMotion Notifications  
+<img width="829" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/78800a28-aa7e-4eda-8b7f-d1509b95744e">  
+
+- High latency sensitivity with hyper-threading  
+<img width="913" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/272572d0-8063-4e36-9502-b3de79dc3785">  
+  
+- Simplified vNUMA configuration  
+<img width="926" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/8efd0672-9039-45ed-b0e2-1954646ababf">  
+
+- Compute Maximums  
+<img width="571" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/f74a6390-f24b-491d-ab03-d27c20eb8ed6">  
+
+## vSAN 8 Express Storage Architecture (ESA)
+
+- Optional Next Generation Architecture built into vSAN
+<img width="850" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/0d3823d6-8f18-4908-9784-bdc6ecc7835c">  
+
+- A New Way to Process and Store Data Efficiently
+<img width="850" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/566af2d6-b9ef-42f7-a63b-2f90a1a8b0d5">  
+
+## Resource Management
+
+- Enhanced DRS Performance - vSphere Memory Monitoring and Remediation v2 (vMMR2)
+Uses Memory Stats for better VM placement  
+<img width="581" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/98d962f5-b19b-4056-919e-9d4a72158e24">  
+
+- Monitor Energy and Carbon Emissions - vSphere Green Metrics  
+<img width="889" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/ae098b36-5682-4002-9112-1af8be4373a7">  
+
+## Security and Compliance
+
+- Improvements to SGX  
+- TLS 1.2 & Better Cipher Suites  
+- Prevent Untrusted Binaries  
+- More Secure Product Defaults  
+<img width="802" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/74979d47-59b2-401c-9035-d0f26b69f617">  
+
+# vSphere 7u3 Upgrade to 8u1
+
+Tips, tricks, gotchas and important dates collected by a friendly VMware TAM
 
 ### TAM customer webinars  
 
