@@ -113,10 +113,10 @@ As of right now I don't see any KB articles with details
 
 
 ## Important dates:
-List EOGS for vSphere 7u3   
+### End of General Support for vSphere 7 - April 2, 2025  
  
 What does End of General Support mean?  
-https://www.vmware.com/support/policies.html#lifecyclepolicies  
+https://www.vmware.com/support/policies.html  
 
 ![general support explanation](https://raw.githubusercontent.com/arielsanchezmora/vSphere-67-Upgrade-to-7u3/main/images/vSphere67-Upgrade-7u3-image2.jpg)  
 
@@ -136,7 +136,43 @@ https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-vcenter-server-801-rele
 
 ## Highlights from ESXi 8u1 release notes
 
-Provide highlights of ESXi 8u1 release notes
+- vSphere Configuration Profiles
+- With vSphere 8.0 Update 1, vSphere Distributed Services Engine adds support for:  
+NVIDIA BlueField-2 DPUs to server designs from Lenovo (Lenovo ThinkSystem SR650 V2)  
+100G NVIDIA BlueField-2 DPUs to server designs from Dell  
+UPTv2 for NVIDIA BlueField-2 DPUs  
+AMD Genoa CPU based server designs from Dell  
+- Recorder for required privileges on vCenter Server workflows  
+- Support for heterogenous virtual graphics processing unit (vGPU) profiles on the same GPU hardware  
+- Integration of VMware Skyline™ Health Diagnostics™ with vCenter  
+- VM-level power consumption metrics  
+- NVSwitch support  
+- Okta Identity Federation for vCenter  
+- Support for Fault Tolerance of virtual machines that use a virtual TPM (vTPM) module  
+- Quick Boot support for servers with TPM 2.0 chips  
+- vSphere API for Storage Awareness (VASA) version 5 for vSphere Virtual Volumes  
+- Sidecar files become regular files in Config-vVol instead of vSphere Virtual Volumes objects  
+After updating to ESXi 8.0 Update 1, new virtual machines, or virtual disks in the Config-vVol namespace are not supported on ESXi hosts of earlier versions. For more information and resolution, see VMware knowledge base article 90791  
+- Increased default capacity for vSphere Virtual Volumes objects of type Config-vVol  
+- NVMe over TCP support for vSphere Virtual Volumes  
+- Extended XCOPY support  
+- New file type for OSDATA volumes on SSD devices  
+- NFS traffic isolation enhancements  
+- Fourfold increase in NVMe-oF namespace capacity  
+- Support for end-to-end NVMe stack without protocol translation  
+vSphere 8.0 Update 1 also extends NVMe functionality by adding support for third-party multi-pathing plug-ins to control and manage NVMe arrays  
+- Increased maximum for Windows Server Failover Clusters (WSFC)  
+- Scale the number of NVMe over TCP adapters  
+- Support hot-add and hot-remove for VMDirectPath I/O devices  
+- Increased number of PCI passthrough devices per VM
+- Local depot overrides for Remote Office and Branch Office (ROBO) standalone ESXi hosts  
+- Advanced filters in the vSphere Client  
+- Increased maximum number of NFSv3 datastores that can be mounted with multiple connections  
+- HTTP/JSON-based wire protocol as an alternative to SOAP/XML  
+  
+- This release resolves CVE-2023-1017. VMware has evaluated the severity of this issue to be in the low severity range with a maximum CVSSv3 base score of 3.3  
+- This release resolves CVE-2023-1018. VMware has evaluated the severity of this issue to be in the low severity range with a maximum CVSSv3 base score of 3.3  
+
 
 
 ## Highlights from vCenter Server 8u1 release notes
@@ -312,15 +348,13 @@ An actual execution order should be in your upgrade documentation plan. The belo
 11. Upgrade storage array infrastructure  
 
 
-## dVS v7 new functionality
+## dVS v8 new functionality
 
-v7 includes new functionalities for the distributed virtual switch, which can be reviewed here:
+v8 includes new functionalities for the distributed virtual switch, which can be reviewed here:
 
 https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-330A0689-574A-4589-9462-14CA03F3F2F4.html  
 
-![vSphere 7 new functionality](https://raw.githubusercontent.com/arielsanchezmora/vSphere-67-Upgrade-to-7u3/main/images/vSphere67-Upgrade-7u3-image9.jpg)
-
-
+<img width="984" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/1a469a9d-7c80-45de-89ea-54ae3d6c54c3">
 
 
 # Post upgrade considerations
