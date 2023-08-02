@@ -206,7 +206,7 @@ Types of backups to check and verify before attempting upgrades:
 
 - vCenter  
 - Distributed virtual switches  
-- ESXi config (especially important as v7 uses a new format and wipes the previous installation) https://kb.vmware.com/s/article/2042141  
+- ESXi config (https://kb.vmware.com/s/article/2042141)  
 
 Also check for re-installation media for the current versions of vSphere, as well as any vendor drivers/firmware that would be needed for a rollback situation.  
 
@@ -241,9 +241,10 @@ Hardware compatibility should be checked for all types of hardware currently dep
 
 https://www.vmware.com/resources/compatibility/search.php  
 
-Several filters can be applied. Sometimes the same server model can have different family CPUs, so this should also be checked (the following screenshot is not comprehensive, but has selected the 7u3 ESXi version and a manufacturer to see all supported servers by that vendor)  
+Several filters can be applied. Sometimes the same server model can have different family CPUs, so this should also be checked (the following screenshot is not comprehensive, but has selected the 8u1 ESXi version and a manufacturer to see all supported servers by that vendor)  
 
-![VMware Compatibility Guide](https://raw.githubusercontent.com/arielsanchezmora/vSphere-67-Upgrade-to-7u3/main/images/vSphere67-Upgrade-7u3-image5.jpg)  
+<img width="936" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/3fb8fd7d-0421-49ad-adc0-56c107ba6372">  
+<img width="937" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/6306e91f-f5fa-400f-8de4-730ec7dd1140">  
 
 Develop and **document** a hardware plan, both for software and hardware firmware and drivers versions. It’s important to verify the hardware vendor’s website for their recommended ESXi installation ISO image, which should include all drivers needed, and related firmware upgrade CD. They typically include release notes or “recipe” documentation to make sure you are aligned; the VMware hardware compatibility web page can also be used to verify IO device driver and firmware combinations.  
 
