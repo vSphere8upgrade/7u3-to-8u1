@@ -103,14 +103,13 @@ Uses Memory Stats for better VM placement
 
 Tips, tricks, gotchas and important dates collected by a friendly VMware TAM
 
-### TAM customer webinars  
+### TAM Customer Webinars  
 
-Provide TAM customer webinars related to vSphere 8u1
+vSphere 8 - What's New - https://www.youtube.com/watch?v=bXabKxGOAP4&list=PLXw1EF8ZER1gvH_YBBZ6N9xujJXT6E9eh  
+What's New with vSAN 8 including Express Storage Architecture - https://www.youtube.com/watch?v=fa8Ax6sPmps
 
-
-### Known issues in 8u1
-As of right now I don't see any KB articles with details   
-
+### [Main KB] - List of vSphere 8.0 Knowledge base articles and Important Links (89756)  
+https://kb.vmware.com/s/article/89756  
 
 ## Important dates:
 ### End of General Support for vSphere 7 - April 2, 2025  
@@ -127,57 +126,53 @@ Provide links to upgrade process
 
 It is **very important** to read the release notes for your version:  
 
-vSphere ESXi 8 Update 1x Release Notes  
-https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-esxi-801-release-notes/index.html - this is for 8u1, 8u1a is now available 
+vSphere ESXi 8 Update 1 Release Notes  
+https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-esxi-801-release-notes/index.html
 
-vCenter Server 8 Update 1x Release Notes  
-https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-vcenter-server-801-release-notes/index.html - this is for 8u1, 8u1b is now available
+vCenter Server 8 Update 1 Release Notes  
+https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-vcenter-server-801-release-notes/index.html
+
+*__Note:__ There have been additional releases to vSphere and ESXi 8 u1 (ESXi - u1a, u1c; vCenter - u1a, u1b, u1c)*
 
 
-## Highlights from ESXi 8u1 release notes
+## Highlights from vCenter and ESXi 8u1 release notes
 
 - vSphere Configuration Profiles
 - With vSphere 8.0 Update 1, vSphere Distributed Services Engine adds support for:  
 NVIDIA BlueField-2 DPUs to server designs from Lenovo (Lenovo ThinkSystem SR650 V2)  
 100G NVIDIA BlueField-2 DPUs to server designs from Dell  
 UPTv2 for NVIDIA BlueField-2 DPUs  
-AMD Genoa CPU based server designs from Dell  
-- Recorder for required privileges on vCenter Server workflows  
-- Support for heterogenous virtual graphics processing unit (vGPU) profiles on the same GPU hardware  
-- Integration of VMware Skyline™ Health Diagnostics™ with vCenter  
-- VM-level power consumption metrics  
-- NVSwitch support  
-- Okta Identity Federation for vCenter  
-- Support for Fault Tolerance of virtual machines that use a virtual TPM (vTPM) module  
-- Quick Boot support for servers with TPM 2.0 chips  
-- vSphere API for Storage Awareness (VASA) version 5 for vSphere Virtual Volumes  
+AMD Genoa CPU based server designs from Dell
+- Recorder for required privileges on vCenter Server workflows
+- Support for heterogenous virtual graphics processing unit (vGPU) profiles on the same GPU hardware
+- Integration of VMware Skyline™ Health Diagnostics™ with vCenter
+- VM-level power consumption metrics
+- NVSwitch support
+- Okta Identity Federation for vCenter
+- Support for Fault Tolerance of virtual machines that use a virtual TPM (vTPM) module
+- Quick Boot support for servers with TPM 2.0 chips
+- vSphere API for Storage Awareness (VASA) version 5 for vSphere Virtual Volumes
 - Sidecar files become regular files in Config-vVol instead of vSphere Virtual Volumes objects  
-After updating to ESXi 8.0 Update 1, new virtual machines, or virtual disks in the Config-vVol namespace are not supported on ESXi hosts of earlier versions. For more information and resolution, see VMware knowledge base article 90791  
-- Increased default capacity for vSphere Virtual Volumes objects of type Config-vVol  
-- NVMe over TCP support for vSphere Virtual Volumes  
-- Extended XCOPY support  
-- New file type for OSDATA volumes on SSD devices  
-- NFS traffic isolation enhancements  
-- Fourfold increase in NVMe-oF namespace capacity  
+After updating to ESXi 8.0 Update 1, new virtual machines, or virtual disks in the Config-vVol namespace are not supported on ESXi hosts of earlier versions. For more information and resolution, see VMware knowledge base article 90791
+- Increased default capacity for vSphere Virtual Volumes objects of type Config-vVol
+- NVMe over TCP support for vSphere Virtual Volumes
+- Extended XCOPY support
+- New file type for OSDATA volumes on SSD devices
+- NFS traffic isolation enhancements
+- Fourfold increase in NVMe-oF namespace capacity
 - Support for end-to-end NVMe stack without protocol translation  
-vSphere 8.0 Update 1 also extends NVMe functionality by adding support for third-party multi-pathing plug-ins to control and manage NVMe arrays  
-- Increased maximum for Windows Server Failover Clusters (WSFC)  
-- Scale the number of NVMe over TCP adapters  
-- Support hot-add and hot-remove for VMDirectPath I/O devices  
+vSphere 8.0 Update 1 also extends NVMe functionality by adding support for third-party multi-pathing plug-ins to control and manage NVMe arrays
+- Increased maximum for Windows Server Failover Clusters (WSFC)
+- Scale the number of NVMe over TCP adapters
+- Support hot-add and hot-remove for VMDirectPath I/O devices
 - Increased number of PCI passthrough devices per VM
-- Local depot overrides for Remote Office and Branch Office (ROBO) standalone ESXi hosts  
-- Advanced filters in the vSphere Client  
-- Increased maximum number of NFSv3 datastores that can be mounted with multiple connections  
+- Local depot overrides for Remote Office and Branch Office (ROBO) standalone ESXi hosts
+- Advanced filters in the vSphere Client
+- Increased maximum number of NFSv3 datastores that can be mounted with multiple connections
 - HTTP/JSON-based wire protocol as an alternative to SOAP/XML  
   
 - This release resolves CVE-2023-1017. VMware has evaluated the severity of this issue to be in the low severity range with a maximum CVSSv3 base score of 3.3  
 - This release resolves CVE-2023-1018. VMware has evaluated the severity of this issue to be in the low severity range with a maximum CVSSv3 base score of 3.3  
-
-
-
-## Highlights from vCenter Server 8u1 release notes
-
-Provide highlights of vCenter Server 8u1 release notes
 
 
 # Upgrade planning
