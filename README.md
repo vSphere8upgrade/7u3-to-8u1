@@ -204,8 +204,8 @@ The first step is to have reliable backups. Confirm and test your backups are in
 
 Types of backups to check and verify before attempting upgrades:  
 
-- vCenter  
-- Distributed virtual switches  
+- vCenter (https://kb.vmware.com/s/article/2149237)  
+- Distributed virtual switches (https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-BE48C292-F222-4095-BCF8-D6444A785E16.html)    
 - ESXi config (https://kb.vmware.com/s/article/2042141)  
 
 Also check for re-installation media for the current versions of vSphere, as well as any vendor drivers/firmware that would be needed for a rollback situation.  
