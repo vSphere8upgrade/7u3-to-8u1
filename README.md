@@ -1,6 +1,17 @@
 # vSphere 8 & 8u1 Highlights - What's New?! 
 
-Share blog posts and videos highlighting the new features/capabilities of vSphere 8u1
+[Video] Why Upgrade to vSphere 8 - https://www.youtube.com/watch?v=4Z3sTJdXOjg  
+New Release Model for vSphere 8 - https://blogs.vmware.com/vsphere/2022/10/new-release-model-for-vsphere-8.html  
+Introducing vSphere 8: The Enterprise Workload Platform - https://blogs.vmware.com/vsphere/2022/08/introducing-vsphere-8-the-enterprise-workload-platform.html  
+What's New in vSphere 8 - https://core.vmware.com/resource/whats-new-vsphere-8  
+[Video] vSphere 8 What's New - https://core.vmware.com/?share=video3697&title=video-vsphere-8-whats-new  
+vSphere on DPUs: NOW Available on vSphere 8 - https://core.vmware.com/blog/vsphere-dpus-now-available-vsphere-8  
+Introducing vSphere 8 Update 1 - https://blogs.vmware.com/vsphere/2023/03/announcing-vsphere-8-update-1.html  
+What's New in vSphere 8 Update 1 - https://core.vmware.com/resource/whats-new-vsphere-8-update-1  
+[Video] vSphere 8 Update 1 What's New - https://core.vmware.com/?share=video4042&title=video-vsphere-8-update-1-whats-new  
+What's New with vSphere 8 (and 8u1) Core Storage - https://core.vmware.com/resource/whats-new-vsphere-8-core-storage#section1  
+vSphere LIVE YouTube Channel - https://www.youtube.com/playlist?list=PLymLY4xJSThqJY4iPo2jhklqYbDr5RtW6  
+
 
 ## vSphere Distributed Services Engine
 
