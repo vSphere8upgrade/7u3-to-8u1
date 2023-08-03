@@ -311,7 +311,7 @@ vSphere integrates with many solutions. Most of the integrations are done at the
 
 Develop a list of all the environments and what software integrations exist. Common ones include backups, monitoring, automation, hardware and storage plugins. You can use this table as an example of the documentation that you should create:  
 
-![vCenter integration documentation](https://raw.githubusercontent.com/arielsanchezmora/vSphere-67-Upgrade-to-7u3/main/images/vSphere67-Upgrade-7u3-image7.jpg)  
+![image](https://github.com/vSphere8upgrade/7u3-to-8u1/assets/16085267/d39babe1-c30f-483c-bb9b-e476a2f5adb2)
 
 Use the product interoperability matrix to check applicable versions  
 
