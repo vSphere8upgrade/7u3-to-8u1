@@ -272,7 +272,8 @@ Several filters can be applied. Sometimes the same server model can have differe
 
 Develop and **document** a hardware plan, both for software and hardware firmware and drivers versions. It’s important to verify the hardware vendor’s website for their recommended ESXi installation ISO image, which should include all drivers needed, and related firmware upgrade CD. They typically include release notes or “recipe” documentation to make sure you are aligned; the VMware hardware compatibility web page can also be used to verify IO device driver and firmware combinations.  
 
-![software, firmware and driver version documentation](https://raw.githubusercontent.com/arielsanchezmora/vSphere-67-Upgrade-to-7u3/main/images/vSphere67-Upgrade-7u3-image6.jpg)  
+![image](https://github.com/vSphere8upgrade/7u3-to-8u1/assets/16085267/6445a663-2790-4809-8238-40c21f96094a)
+
 
 It’s important to get familiarized with the replacement for VUM (vSphere Upgrade Manager) called vSphere Lifecycle Management. It is similar but introduces new features. These two links are a great start:  
 
