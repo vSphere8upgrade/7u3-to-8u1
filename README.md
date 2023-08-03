@@ -12,6 +12,20 @@ What's New in vSphere 8 Update 1 - https://core.vmware.com/resource/whats-new-vs
 What's New with vSphere 8 (and 8u1) Core Storage - https://core.vmware.com/resource/whats-new-vsphere-8-core-storage#section1  
 vSphere LIVE YouTube Channel - The monthly show where we talk about vSphere-related topics and answer everyone's questions live on the air - https://www.youtube.com/playlist?list=PLymLY4xJSThqJY4iPo2jhklqYbDr5RtW6  
 
+# Table of contents
+1. [Introduction](#introduction)
+2. [Some paragraph](#paragraph1)
+    1. [Sub paragraph](#subparagraph1)
+3. [Another paragraph](#paragraph2)
+
+## This is the introduction <a name="introduction"></a>
+Some introduction text, formatted in heading 2 style
+
+## Some paragraph <a name="paragraph1"></a>
+The first paragraph text
+
+### Sub paragraph <a name="subparagraph1"></a>
+This is a sub paragraph, formatted in heading 3 style
 
 ## vSphere Distributed Services Engine
 
