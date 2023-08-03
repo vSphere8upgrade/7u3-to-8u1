@@ -1,13 +1,13 @@
 # Table of Contents
 
-1. vSphere 8 and 8u1 announcements and documentation
-   a. Helpful Youtube videos
-   b. Helpful release blog posts
-   c. General documentation
-   d. Articles in core.vmware.com
-2. vSphere 8 and 8u1 new features
-   a. [vSphere Distributed Services Engine](#vSphereDistributedServicesEngine)
-4. vSphere 8u1 Upgrade Tips
+1. vSphere 8 and 8u1 announcements and documentation  
+   a. Helpful Youtube videos  
+   b. Helpful release blog posts  
+   c. General documentation  
+   d. Articles in core.vmware.com  
+2. vSphere 8 and 8u1 new features  
+   a. [vSphere Distributed Services Engine](#vspheredistributedservicesengine)  
+4. vSphere 8u1 Upgrade Tips  
 
 # vSphere 8 & 8u1 Highlights - What's New?! 
 
@@ -38,7 +38,7 @@ The first paragraph text
 ### Sub paragraph <a name="subparagraph1"></a>
 This is a sub paragraph, formatted in heading 3 style
 
-## vSphere Distributed Services Engine <a name="vSphereDistributedServicesEngine"></a>
+## vSphere Distributed Services Engine <a name="vspheredistributedservicesengine"></a>  
 
 - Improves infrastructure performance   
 - Simplifies DPU lifecycle management  
