@@ -55,7 +55,6 @@ In vSphere 8, an additional instance of ESXi is installed directly on the Data P
 
 ## Artificial Intelligence & Machine Learning
 
-
 - Unified Management for AI/ML Hardware Accelerators
 <img width="548" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/b849d683-f7b4-413a-a628-310492285b5b">
 
@@ -110,7 +109,7 @@ Uses Memory Stats for better VM placement
 - More Secure Product Defaults  
 <img width="802" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/74979d47-59b2-401c-9035-d0f26b69f617">  
 
-# vSphere 7u3 Upgrade to 8u1
+# vSphere 7 Update 3 Upgrade to 8 Update 1
 
 Tips, tricks, gotchas and important dates collected by a friendly VMware TAM
 
@@ -118,6 +117,7 @@ Tips, tricks, gotchas and important dates collected by a friendly VMware TAM
 
 vSphere 8 - What's New - https://www.youtube.com/watch?v=bXabKxGOAP4&list=PLXw1EF8ZER1gvH_YBBZ6N9xujJXT6E9eh  
 What's New with vSAN 8 including Express Storage Architecture - https://www.youtube.com/watch?v=fa8Ax6sPmps
+vSphere Lifecycle Management - https://www.youtube.com/watch?v=IUENQZeHalw&list=PLXw1EF8ZER1hPcEdIju9_hnzlMCbBgvRw&index=9  
 
 ### [Main KB] - List of vSphere 8.0 Knowledge base articles and Important Links (89756)  
 https://kb.vmware.com/s/article/89756  
