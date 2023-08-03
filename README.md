@@ -10,7 +10,7 @@ Introducing vSphere 8 Update 1 - https://blogs.vmware.com/vsphere/2023/03/announ
 What's New in vSphere 8 Update 1 - https://core.vmware.com/resource/whats-new-vsphere-8-update-1  
 [Video] vSphere 8 Update 1 What's New - https://core.vmware.com/?share=video4042&title=video-vsphere-8-update-1-whats-new  
 What's New with vSphere 8 (and 8u1) Core Storage - https://core.vmware.com/resource/whats-new-vsphere-8-core-storage#section1  
-vSphere LIVE YouTube Channel - https://www.youtube.com/playlist?list=PLymLY4xJSThqJY4iPo2jhklqYbDr5RtW6  
+vSphere LIVE YouTube Channel - The monthly show where we talk about vSphere-related topics and answer everyone's questions live on the air - https://www.youtube.com/playlist?list=PLymLY4xJSThqJY4iPo2jhklqYbDr5RtW6  
 
 
 ## vSphere Distributed Services Engine
