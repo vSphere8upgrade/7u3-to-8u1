@@ -152,6 +152,9 @@ __[Main KB] - List of vSphere 8.0 Knowledge base articles and Important Links (8
 What does End of General Support mean?  
 https://www.vmware.com/support/policies.html  
 
+![image](https://github.com/vSphere8upgrade/7u3-to-8u1/assets/16085267/b36d7a3e-2f8b-49de-8300-f65d74f7a08b)
+
+
 ![general support explanation](https://raw.githubusercontent.com/arielsanchezmora/vSphere-67-Upgrade-to-7u3/main/images/vSphere67-Upgrade-7u3-image2.jpg)  
 
 
