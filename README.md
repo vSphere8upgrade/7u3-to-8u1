@@ -116,11 +116,10 @@ Tips, tricks, gotchas and important dates collected by a friendly VMware TAM
 ### TAM Customer Webinars  
 
 vSphere 8 - What's New - https://www.youtube.com/watch?v=bXabKxGOAP4&list=PLXw1EF8ZER1gvH_YBBZ6N9xujJXT6E9eh  
-What's New with vSAN 8 including Express Storage Architecture - https://www.youtube.com/watch?v=fa8Ax6sPmps
+What's New with vSAN 8 including Express Storage Architecture - https://www.youtube.com/watch?v=fa8Ax6sPmps  
 vSphere Lifecycle Management - https://www.youtube.com/watch?v=IUENQZeHalw&list=PLXw1EF8ZER1hPcEdIju9_hnzlMCbBgvRw&index=9  
 
-### [Main KB] - List of vSphere 8.0 Knowledge base articles and Important Links (89756)  
-https://kb.vmware.com/s/article/89756  
+__[Main KB] - List of vSphere 8.0 Knowledge base articles and Important Links (89756)__ - https://kb.vmware.com/s/article/89756  
 
 ## Important dates:
 ### End of General Support for vSphere 7 - April 2, 2025  
