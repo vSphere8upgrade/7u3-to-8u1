@@ -302,7 +302,7 @@ Several filters can be applied. Sometimes the same server model can have differe
 
 Develop and **document** a hardware plan, both for software and hardware firmware and drivers versions. It’s important to verify the hardware vendor’s website for their recommended ESXi installation ISO image, which should include all drivers needed, and related firmware upgrade CD. They typically include release notes or “recipe” documentation to make sure you are aligned; the VMware hardware compatibility web page can also be used to verify IO device driver and firmware combinations.  
 
-![image](https://github.com/vSphere8upgrade/7u3-to-8u1/assets/16085267/6445a663-2790-4809-8238-40c21f96094a)
+![image](https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/aed9f938-65e3-4b52-8651-e34c34b9e8e0)  
 
 ### vSphere Lifecycle Manager (VUM Replacement) 
 
@@ -320,7 +320,7 @@ vSphere 7 Environment - https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-li
 
 vSphere 8 Environment - https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-lifecycle-manager/GUID-B54663AB-B1D1-4E87-8B8C-76FF2998A477.html  
 
-The best practice is to use your test environments to familiarize yourself with the new interface.  
+__*Note*__ The best practice is to use your test environments to familiarize yourself with the new interface.  
 
 ## Licensing <a name="licensing"></a>  
 
