@@ -1,18 +1,3 @@
-# Table of contents EXAMPLE - remove when done!!
-1. [Introduction](#introduction)
-2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
-
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
-
-## Some paragraph <a name="paragraph1"></a>
-The first paragraph text
-
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
-
 # Table of Contents
 
 1. [vSphere 8 & 8u1 Announcements & Documentation](#v8announcementsanddocs)  
@@ -296,8 +281,8 @@ Production environment upgrades should consider the level of impact, hardware an
 ## dVS Upgrades Carry Some Risk <a name="dvsrisk"></a>  
 
 Distributed virtual switch upgrades should be done off hours as they can cause a network “blip”. Please read and understand the following KB  
-https://kb.vmware.com/s/article/52621  
 
+https://kb.vmware.com/s/article/52621  
 
 ## Use GSS & TAM Services to Assist Prior to the Upgrade <a name="usetamgss"></a>  
 
@@ -319,18 +304,27 @@ Develop and **document** a hardware plan, both for software and hardware firmwar
 
 ![image](https://github.com/vSphere8upgrade/7u3-to-8u1/assets/16085267/6445a663-2790-4809-8238-40c21f96094a)
 
+### vSphere Lifecycle Manager (VUM Replacement) 
 
-It’s important to get familiarized with the replacement for VUM (vSphere Upgrade Manager) called vSphere Lifecycle Management. It is similar but introduces new features. These two links are a great start:  
+It’s important to get familiarized with the replacement for VUM (vSphere Upgrade Manager) called vSphere Lifecycle Management (vLCM). VUM is deprecated in vSphere 8 which means vSphere 8 is going to be the last vSphere release that supports baseline lifecycle management. If you have not switched to vSphere Lifecycle Manager single image, Please review the Switching from Using Baselines to Using Images links below.
+
+__Introduction to vLCM__  
 
 https://core.vmware.com/resource/introducing-vsphere-lifecycle-management-vlcm  
 
-https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere-lifecycle-manager.doc/GUID-74295A37-E8BB-4EB9-BFBA-47B78F0C570D.html  
+https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-lifecycle-manager/GUID-74295A37-E8BB-4EB9-BFBA-47B78F0C570D.html  
+
+__Switching from Using Baselines to Using Images__  
+
+vSphere 7 Environment - https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-lifecycle-manager/GUID-B54663AB-B1D1-4E87-8B8C-76FF2998A477.html  
+
+vSphere 8 Environment - https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-lifecycle-manager/GUID-B54663AB-B1D1-4E87-8B8C-76FF2998A477.html  
 
 The best practice is to use your test environments to familiarize yourself with the new interface.  
 
 ## Licensing <a name="licensing"></a>  
 
-An upgrade from v6 to v7 will require updating licenses. Document old license keys and their location, and upgrade license keys as you upgrade environments. You will need licenses for all upgraded components, including individual hosts and vSAN.  
+An upgrade from v7 to v8 will require updating licenses. Document old license keys and their location, and upgrade license keys as you upgrade environments. You will need licenses for all upgraded components, including individual hosts and vSAN.  
 
 ## Security Hardening <a name="sechardening"></a>  
 
@@ -338,8 +332,7 @@ A complete review of hardening steps has to be done with this upgrade. The steps
 
 https://www.vmware.com/security/hardening-guides.html  
 
-https://blogs.vmware.com/vsphere/2020/10/announcing-the-vsphere-security-configuration-guide-7.html  
-
+https://blogs.vmware.com/vsphere/2020/10/announcing-the-vsphere-security-configuration-guide-7.html    
 
 ## Follow Recommended Order for All VMware Component Upgrades <a name="followrecorder"></a>
 
