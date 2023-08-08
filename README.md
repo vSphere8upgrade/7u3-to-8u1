@@ -1,29 +1,4 @@
-# Table of Contents
-
-1. vSphere 8 and 8u1 announcements and documentation  
-   a. Helpful Youtube videos  
-   b. Helpful release blog posts  
-   c. General documentation  
-   d. Articles in core.vmware.com  
-2. vSphere 8 and 8u1 new features  
-   a. [vSphere Distributed Services Engine](#vspheredistributedservicesengine)  
-4. vSphere 8u1 Upgrade Tips  
-
-# vSphere 8 & 8u1 Highlights - What's New?! 
-
-[Video] Why Upgrade to vSphere 8 - https://www.youtube.com/watch?v=4Z3sTJdXOjg  
-New Release Model for vSphere 8 - https://blogs.vmware.com/vsphere/2022/10/new-release-model-for-vsphere-8.html  
-Introducing vSphere 8: The Enterprise Workload Platform - https://blogs.vmware.com/vsphere/2022/08/introducing-vsphere-8-the-enterprise-workload-platform.html  
-What's New in vSphere 8 - https://core.vmware.com/resource/whats-new-vsphere-8  
-[Video] vSphere 8 What's New - https://core.vmware.com/?share=video3697&title=video-vsphere-8-whats-new  
-vSphere on DPUs: NOW Available on vSphere 8 - https://core.vmware.com/blog/vsphere-dpus-now-available-vsphere-8  
-Introducing vSphere 8 Update 1 - https://blogs.vmware.com/vsphere/2023/03/announcing-vsphere-8-update-1.html  
-What's New in vSphere 8 Update 1 - https://core.vmware.com/resource/whats-new-vsphere-8-update-1  
-[Video] vSphere 8 Update 1 What's New - https://core.vmware.com/?share=video4042&title=video-vsphere-8-update-1-whats-new  
-What's New with vSphere 8 (and 8u1) Core Storage - https://core.vmware.com/resource/whats-new-vsphere-8-core-storage#section1  
-vSphere LIVE YouTube Channel - The monthly show where we talk about vSphere-related topics and answer everyone's questions live on the air - https://www.youtube.com/playlist?list=PLymLY4xJSThqJY4iPo2jhklqYbDr5RtW6  
-
-# Table of contents
+# Table of contents EXAMPLE - remove when done!!
 1. [Introduction](#introduction)
 2. [Some paragraph](#paragraph1)
     1. [Sub paragraph](#subparagraph1)
@@ -37,6 +12,76 @@ The first paragraph text
 
 ### Sub paragraph <a name="subparagraph1"></a>
 This is a sub paragraph, formatted in heading 3 style
+
+# Table of Contents
+
+1. [vSphere 8 & 8u1 Announcements & Documentation](#v8announcementsanddocs)  
+   a. [Helpful Videos & Blog Posts](#videosandblogs)  
+   b. [General Documentation](#generaldocumentation)  
+   c. [Useful Links](#usefullinks)  
+2. [vSphere 8 & 8u1 New Features](#newfeatures)  
+   a. [vSphere Distributed Services Engine](#vspheredistributedservicesengine)  
+   b. [vSphere with Tanzu](#vspheretanzu)  
+   c. [Lifecycle Management](#lifecyclemgmt)  
+   d. [Artificial Intelligence & Machine Learning](#aiml)  
+   e. [Guest OS & Workloads](#osworkloads)  
+   f. [vSAN 8 Express Storage Architecture (ESA)](#vsan8esa)  
+   g. [Resource Management](#resourcemgmt)  
+   h. [Security & Compliance](#seccompliance)  
+3. [vSphere 8u1 Upgrade Tips](#8u1upgradetips)  
+   a. [TAM Customer Webinars](#tamcustomerwebinars)  
+   b. [Important Dates](#importantdates)  
+   c. [General Documentation on Upgrade Process & Recommendations](#genupgradeproc)  
+   d. [Highlights From vCenter & ESXi 8u1 Release Notes](#highlightsreleasenotes)
+4. [Upgrade Planning](#upgradeplanning)  
+   a. [Minimizing Unknown Risk](#minimizerisk)  
+   b. [Backups](#backups)  
+   c. [Target Environments with Less Risk First](#target)  
+   d. [dVS Upgrades Carry Some Risk](#dvsrisk)  
+   e. [Use GSS & TAM Services to Assist Prior to the Upgrade](#usetamgss)  
+   f. [Hardware Considerations](#hwconsiderations)  
+   g. [Licensing](#licensing)  
+   h. [Security Hardening](#sechardening)  
+   i. [Follow Recommended Order for All VMware Component Upgrades](#followrecorder)  
+   j. [Check vCenter Integration Dependencies](#checkvcenterdep)  
+   k. [VCSA Free Space](@vcsafreespace)  
+   l. [vSphere Diagnostic Tool](#diagnostictool)  
+   m. [Further Reading](#furtherreading)  
+
+# vSphere 8 & 8u1 Announcements & Documentation <a name="v8announcementsanddocs"></a>  
+
+## Helpful Videos & Blog Posts <a name="videosandblogs"></a>  
+
+[Video] Why Upgrade to vSphere 8 - https://www.youtube.com/watch?v=4Z3sTJdXOjg  
+New Release Model for vSphere 8 - https://blogs.vmware.com/vsphere/2022/10/new-release-model-for-vsphere-8.html  
+Introducing vSphere 8: The Enterprise Workload Platform - https://blogs.vmware.com/vsphere/2022/08/introducing-vsphere-8-the-enterprise-workload-platform.html  
+What's New in vSphere 8 - https://core.vmware.com/resource/whats-new-vsphere-8  
+[Video] vSphere 8 What's New - https://core.vmware.com/?share=video3697&title=video-vsphere-8-whats-new  
+vSphere on DPUs: NOW Available on vSphere 8 - https://core.vmware.com/blog/vsphere-dpus-now-available-vsphere-8  
+Introducing vSphere 8 Update 1 - https://blogs.vmware.com/vsphere/2023/03/announcing-vsphere-8-update-1.html  
+What's New in vSphere 8 Update 1 - https://core.vmware.com/resource/whats-new-vsphere-8-update-1  
+[Video] vSphere 8 Update 1 What's New - https://core.vmware.com/?share=video4042&title=video-vsphere-8-update-1-whats-new  
+What's New with vSphere 8 (and 8u1) Core Storage - https://core.vmware.com/resource/whats-new-vsphere-8-core-storage#section1  
+vSphere LIVE YouTube Channel - The monthly show where we talk about vSphere-related topics and answer everyone's questions live on the air - https://www.youtube.com/playlist?list=PLymLY4xJSThqJY4iPo2jhklqYbDr5RtW6  
+
+## General Documentation <a name="generaldocumentation"></a>  
+
+vSphere 8 Release Notes - https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vmware-vsphere-80-release-notes/index.html  
+vSphere Documentation - https://docs.vmware.com/en/VMware-vSphere/index.html  
+Configuration Maximums - https://configmax.esp.vmware.com/guest?vmwareproduct=vSphere&release=vSphere%208.0&categories=1-0  
+VMware Firewall Ports & Protocols - https://ports.esp.vmware.com/  
+Product Interoperability Matrix - https://interopmatrix.vmware.com/Interoperability  
+VMware Security Advisories - https://www.vmware.com/security/advisories.html  
+
+## Useful Links <a name="usefullinks"></a>  
+
+core.vmware.com: The home for technical guidance on the core technologies that provide modern cloud infrastructure - https://core.vmware.com/vSphere  
+vSphere LIVE YouTube Channel: The monthly show where they talk about vSphere-related topics and answer everyone's questions live on the air - https://www.youtube.com/playlist?list=PLymLY4xJSThqJY4iPo2jhklqYbDr5RtW6  
+General VMware YouTube Channel: Anything and everything VMware videos - https://www.youtube.com/user/vmwaretv  
+VMware vSphere YouTube Channel: Videos related to vSphere - https://www.youtube.com/channel/UCN8FHFshMw-15AtFKWSLczA  
+__[Main KB] - List of vSphere 8.0 Knowledge base articles and Important Links (89756)__ - https://kb.vmware.com/s/article/89756 
+
+# vSphere 8 & 8u1 New Features <a name="newfeatures"></a>  
 
 ## vSphere Distributed Services Engine <a name="vspheredistributedservicesengine"></a>  
 
@@ -53,7 +98,7 @@ In vSphere 8, an additional instance of ESXi is installed directly on the Data P
 <img width="727" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/390fd0b9-7889-4b2d-a049-f2de4a1bb354">
 
 
-## vSphere with Tanzu
+## vSphere with Tanzu <a name="vspheretanzu"></a>  
 
 <img width="584" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/667f409f-962f-4fcf-8812-6a7e6a880a06">
 
@@ -63,7 +108,8 @@ In vSphere 8, an additional instance of ESXi is installed directly on the Data P
 - Customize PhotonOS or Ubuntu images  
 - Pinniped Integration
 
-## Lifecycle Management
+## Lifecycle Management <a name="lifecyclemgmt"></a>  
+
 ### Deprecation Awareness - vSphere 8 last version of vSphere Update Manager (VUM)  
 - DPU Support  
 - Faster Cluster Remediation with Staging Support and Parallel Remediation  
@@ -78,7 +124,7 @@ In vSphere 8, an additional instance of ESXi is installed directly on the Data P
 
 <img width="565" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/ec9cd842-1a97-4538-9874-646ce0b59d73"> <img width="310" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/a743103e-1d5a-4208-b1cf-acd98985f3c8">  
 
-## Artificial Intelligence & Machine Learning
+## Artificial Intelligence & Machine Learning <a name="aiml"></a> 
 
 - Unified Management for AI/ML Hardware Accelerators
 <img width="548" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/b849d683-f7b4-413a-a628-310492285b5b">
@@ -89,7 +135,7 @@ In vSphere 8, an additional instance of ESXi is installed directly on the Data P
 - Introducing Next-Generation of Virtual Hardware Devices - Device Virtualization Extensions (DVX)
 <img width="829" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/efb68d61-e16f-4724-8ac7-3e4750ef9752">    
 
-## Guest OS and Workloads
+## Guest OS & Workloads <a name="osworkloads"></a>  
 
 - Virtual Hardware Version 20  
 <img width="897" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/8c7d29d4-1181-4c5f-9b73-d2fc40c2a14a">  
@@ -109,7 +155,7 @@ In vSphere 8, an additional instance of ESXi is installed directly on the Data P
 - Compute Maximums  
 <img width="571" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/f74a6390-f24b-491d-ab03-d27c20eb8ed6">  
 
-## vSAN 8 Express Storage Architecture (ESA)
+## vSAN 8 Express Storage Architecture (ESA) <a name="vsan8esa"></a> 
 
 - Optional Next Generation Architecture built into vSAN
 <img width="850" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/0d3823d6-8f18-4908-9784-bdc6ecc7835c">  
@@ -117,7 +163,7 @@ In vSphere 8, an additional instance of ESXi is installed directly on the Data P
 - A New Way to Process and Store Data Efficiently
 <img width="850" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/566af2d6-b9ef-42f7-a63b-2f90a1a8b0d5">  
 
-## Resource Management
+## Resource Management <a name="resourcemgmt"></a> 
 
 - Enhanced DRS Performance - vSphere Memory Monitoring and Remediation v2 (vMMR2)
 Uses Memory Stats for better VM placement  
@@ -126,7 +172,7 @@ Uses Memory Stats for better VM placement
 - Monitor Energy and Carbon Emissions - vSphere Green Metrics  
 <img width="889" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/ae098b36-5682-4002-9112-1af8be4373a7">  
 
-## Security and Compliance
+## Security & Compliance <a name="seccompliance"></a>  
 
 - Improvements to SGX  
 - TLS 1.2 & Better Cipher Suites  
@@ -134,19 +180,16 @@ Uses Memory Stats for better VM placement
 - More Secure Product Defaults  
 <img width="802" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/74979d47-59b2-401c-9035-d0f26b69f617">  
 
-# vSphere 7 Update 3 Upgrade to 8 Update 1
+# vSphere 8u1 Upgrade Tips <a name="8u1upgradetips"></a>  
 
-Tips, tricks, gotchas and important dates collected by a friendly VMware TAM
-
-### TAM Customer Webinars  
+## TAM Customer Webinars <a name="tamcustomerwebinars"></a>  
 
 vSphere 8 - What's New - https://www.youtube.com/watch?v=bXabKxGOAP4&list=PLXw1EF8ZER1gvH_YBBZ6N9xujJXT6E9eh  
 What's New with vSAN 8 including Express Storage Architecture - https://www.youtube.com/watch?v=fa8Ax6sPmps  
-vSphere Lifecycle Management - https://www.youtube.com/watch?v=IUENQZeHalw&list=PLXw1EF8ZER1hPcEdIju9_hnzlMCbBgvRw&index=9  
+vSphere Lifecycle Management - https://www.youtube.com/watch?v=IUENQZeHalw&list=PLXw1EF8ZER1hPcEdIju9_hnzlMCbBgvRw&index=9   
 
-__[Main KB] - List of vSphere 8.0 Knowledge base articles and Important Links (89756)__ - https://kb.vmware.com/s/article/89756  
+## Important dates <a name="importantdates"></a>  
 
-## Important dates:
 ### End of General Support for vSphere 7 - April 2, 2025  
  
 What does End of General Support mean?  
@@ -155,7 +198,7 @@ https://www.vmware.com/support/policies.html
 ![image](https://github.com/vSphere8upgrade/7u3-to-8u1/assets/16085267/b36d7a3e-2f8b-49de-8300-f65d74f7a08b)
 
 
-## General documentation on upgrade process and recommendations
+## General Documentation on Upgrade Process & Recommendations <a name="genupgradeproc"></a>  
 
 Provide links to upgrade process
 
@@ -170,7 +213,7 @@ https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-vcenter-server-801-rele
 *__Note:__ There have been additional releases to vSphere and ESXi 8 u1 (ESXi - u1a, u1c; vCenter - u1a, u1b, u1c)*
 
 
-## Highlights from vCenter and ESXi 8u1 release notes
+## Highlights From vCenter & ESXi 8u1 Release Notes <a name="highlightsreleasenotes"></a>  
 
 - vSphere Configuration Profiles
 - With vSphere 8.0 Update 1, vSphere Distributed Services Engine adds support for:  
@@ -210,10 +253,9 @@ vSphere 8.0 Update 1 also extends NVMe functionality by adding support for third
 - This release resolves CVE-2023-1018. VMware has evaluated the severity of this issue to be in the low severity range with a maximum CVSSv3 base score of 3.3  
 
 
-# Upgrade planning
+# Upgrade Planning <a name="upgradeplanning"></a>  
 
-
-## Minimizing unknown risk
+## Minimizing Unknown Risk <a name="minimizerisk"></a>  
 
 History teaches that no amount of planning will consider all use cases. Thus, it’s best to introduce strategies meant at minimizing risk.  
 
@@ -221,8 +263,7 @@ It’s important to develop company-specific documentation for the upgrade proce
 
 The following are considerations that should be addressed before deciding on a date for the upgrades.
 
-
-## Backups
+## Backups <a name="backups"></a>  
 
 The first step is to have reliable backups. Confirm and test your backups are in good working order before upgrading.  
 
@@ -234,8 +275,7 @@ Types of backups to check and verify before attempting upgrades:
 
 Also check for re-installation media for the current versions of vSphere, as well as any vendor drivers/firmware that would be needed for a rollback situation.  
 
-
-## Target environments with less risk first
+## Target Environments with Less Risk First <a name="target"></a>  
 
 One way to minimize risk is to have several independent environments where upgrades can be tested in order from least impactful up to production. For example:  
 
@@ -248,18 +288,18 @@ A point of conflict could be environments that are in linked mode. vCenter upgra
 Production environment upgrades should consider the level of impact, hardware and number of integrations. A VDI environment, for example, has more considerations than a server environment. If possible, develop or simulate these integrations in test or dev.  
 
 
-## dVS Upgrades carry some risk
+## dVS Upgrades Carry Some Risk <a name="dvsrisk"></a>  
 
 Distributed virtual switch upgrades should be done off hours as they can cause a network “blip”. Please read and understand the following KB  
 https://kb.vmware.com/s/article/52621  
 
 
-## Use GSS and TAM services to assist prior to the upgrade
+## Use GSS & TAM Services to Assist Prior to the Upgrade <a name="usetamgss"></a>  
 
 Always open a proactive GSS ticket prior to upgrades. Present your plan to GSS and ask them to verify it. You may require 5 business days or more, depending on many factors, so open with time. Of course, your TAM will also verify to the best of their ability.
 
 
-## Hardware considerations
+## Hardware Considerations <a name="hwconsiderations"></a>
 
 Hardware compatibility should be checked for all types of hardware currently deployed in the environment using the VMware Compatibility Guide  
 
@@ -283,13 +323,11 @@ https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere-lifecycle-manag
 
 The best practice is to use your test environments to familiarize yourself with the new interface.  
 
-
-## Licensing
+## Licensing <a name="licensing"></a>  
 
 An upgrade from v6 to v7 will require updating licenses. Document old license keys and their location, and upgrade license keys as you upgrade environments. You will need licenses for all upgraded components, including individual hosts and vSAN.  
 
-
-## Security hardening
+## Security Hardening <a name="sechardening"></a>  
 
 A complete review of hardening steps has to be done with this upgrade. The steps that were used to harden v6.7 will be different in v7, although many will be similar. Always refer to the official hardening guide link to find the best recommendation:  
 
@@ -298,14 +336,14 @@ https://www.vmware.com/security/hardening-guides.html
 https://blogs.vmware.com/vsphere/2020/10/announcing-the-vsphere-security-configuration-guide-7.html  
 
 
-## Follow recommended order for all VMware component upgrades
+## Follow Recommended Order for All VMware Component Upgrades <a name="followrecorder"></a>
 
 There is a specific upgrade order when several VMware products are installed together. Familiarize yourself with this KB and follow the order in your upgrade plan document.  
 
-https://kb.vmware.com/s/article/89745 - link has been updated for vSphere 8 
+https://kb.vmware.com/s/article/89745  
 
 
-## Checking vCenter integration dependencies
+## Check vCenter Integration Dependencies <a name="checkvcenterdep"></a>
 
 vSphere integrates with many solutions. Most of the integrations are done at the vCenter level. These include both VMware and 3rd party solutions.  
 
@@ -317,28 +355,28 @@ Use the product interoperability matrix to check applicable versions
 
 https://interopmatrix.vmware.com/Interoperability  
 
-For example, SRM is required to be at version 8.5 to be compatible with vSphere 7u3:  
+For example, NSX is required to be at version 4.x to be compatible with vSphere 8u1:  
 
 ![SRM and vCenter version dependencies](https://raw.githubusercontent.com/arielsanchezmora/vSphere-67-Upgrade-to-7u3/main/images/vSphere67-Upgrade-7u3-image8.jpg)  
 
 Develop this list _before_ starting upgrades. It will bring clarity of what systems share integrations (for example, the same backup platform may service both dev and production environments) and will save many avoidable headaches.
 
 
-## VCSA free space
+## VCSA Free Space <a name="vcsafreespace"></a>  
 
 You will get an option to migrate the most essential data, or to also include tasks, events and performance metrics. You can compare the size of the data with the available free space in the source vCenter. When the data is larger than available free space, you will be asked for a different location than / . Typically, you will find the VUM partition has large free space (using the command _df -h_) and can provide that, check this [blog post by Luciano Patrao](https://www.provirtualzone.com/how-to-add-extra-space-to-vcenter-for-the-upgrade/) or consult with GSS.
 
 ![VCSA upgrade data option](https://raw.githubusercontent.com/arielsanchezmora/vSphere-67-Upgrade-to-7u3/main/images/vSphere67-Upgrade-7u3-image10.jpg)
 
 
-## vSphere Diagnostic Tool 
+## vSphere Diagnostic Tool <a name="diagnostictool"></a>  
 
 A tool that VMware GSS has made available to the public in fling form is able to catch many problems in vCenter environments before they become an issue mid-upgrade. It is a good idea you run this and share the output in your proactive GSS ticket, as it may show some tasks that need to be performed before you attempt the upgrade.  
 
-https://flings.vmware.com/vsphere-diagnostic-tool - confirmed that this is updated to support v8u1 
+https://flings.vmware.com/vsphere-diagnostic-tool 
 
 
-## Further Reading
+## Further Reading <a name="furtherreading"></a>
 
 I want to link to several of [Lucho DeLorenzi](https://twitter.com/lgdelorenzi)'s blog posts, which are very useful especially when you want to get your hands dirty and check the health of your vCenters yourself. This should be covered during your proactive ticket with VMware GSS, but just in case :)
 
