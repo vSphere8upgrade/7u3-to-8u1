@@ -354,9 +354,9 @@ Use the product interoperability matrix to check applicable versions
 
 https://interopmatrix.vmware.com/Interoperability  
 
-For example, NSX is required to be at version 4.x to be compatible with vSphere 8u1:  
+For example, NSX is required to be at minimum version 4.0.1 to be supported with vSphere 8u1:  
 
-![SRM and vCenter version dependencies](https://raw.githubusercontent.com/arielsanchezmora/vSphere-67-Upgrade-to-7u3/main/images/vSphere67-Upgrade-7u3-image8.jpg)  
+<img width="1444" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/12abe952-0204-4be0-9ddb-5bbf4409084b">  
 
 Develop this list _before_ starting upgrades. It will bring clarity of what systems share integrations (for example, the same backup platform may service both dev and production environments) and will save many avoidable headaches.
 
