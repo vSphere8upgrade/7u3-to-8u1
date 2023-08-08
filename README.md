@@ -31,7 +31,6 @@
    j. [Check vCenter Integration Dependencies](#checkvcenterdep)  
    k. [VCSA Free Space](@vcsafreespace)  
    l. [vSphere Diagnostic Tool](#diagnostictool)  
-   m. [Further Reading](#furtherreading)
 5. [Upgrade Execution](#upgradeexecution)  
    a. [Upgrade Day Preparation Checklist](#prepchecklist)  
    b. [Upgrade Order List](#orderlist)  
@@ -343,7 +342,6 @@ There is a specific upgrade order when several VMware products are installed tog
 
 https://kb.vmware.com/s/article/89745  
 
-
 ## Check vCenter Integration Dependencies <a name="checkvcenterdep"></a>
 
 vSphere integrates with many solutions. Most of the integrations are done at the vCenter level. These include both VMware and 3rd party solutions.  
@@ -362,31 +360,17 @@ For example, NSX is required to be at version 4.x to be compatible with vSphere 
 
 Develop this list _before_ starting upgrades. It will bring clarity of what systems share integrations (for example, the same backup platform may service both dev and production environments) and will save many avoidable headaches.
 
-
 ## VCSA Free Space <a name="vcsafreespace"></a>  
 
 You will get an option to migrate the most essential data, or to also include tasks, events and performance metrics. You can compare the size of the data with the available free space in the source vCenter. When the data is larger than available free space, you will be asked for a different location than / . Typically, you will find the VUM partition has large free space (using the command _df -h_) and can provide that, check this [blog post by Luciano Patrao](https://www.provirtualzone.com/how-to-add-extra-space-to-vcenter-for-the-upgrade/) or consult with GSS.
 
 ![VCSA upgrade data option](https://raw.githubusercontent.com/arielsanchezmora/vSphere-67-Upgrade-to-7u3/main/images/vSphere67-Upgrade-7u3-image10.jpg)
 
-
 ## vSphere Diagnostic Tool <a name="diagnostictool"></a>  
 
 A tool that VMware GSS has made available to the public in fling form is able to catch many problems in vCenter environments before they become an issue mid-upgrade. It is a good idea you run this and share the output in your proactive GSS ticket, as it may show some tasks that need to be performed before you attempt the upgrade.  
 
-https://flings.vmware.com/vsphere-diagnostic-tool 
-
-
-## Further Reading <a name="furtherreading"></a>
-
-I want to link to several of [Lucho DeLorenzi](https://twitter.com/lgdelorenzi)'s blog posts, which are very useful especially when you want to get your hands dirty and check the health of your vCenters yourself. This should be covered during your proactive ticket with VMware GSS, but just in case :)
-
-https://luchodelorenzi.com/2021/04/05/how-do-i-get-to-vsphere-7-0-without-dying-in-the-process/  
-_video is in Spanish, courtesy of the Argentina VMUG_  
-
-https://luchodelorenzi.com/2020/04/10/pre-upgrade-considerations-in-multi-vcenter-environments/  
-
-https://luchodelorenzi.com/2020/05/28/proactively-checking-and-replacing-sts-certificate-on-vsphere-6-x-7-x/  
+https://flings.vmware.com/vsphere-diagnostic-tool   
 
 # Upgrade Execution <a name="upgradeexecution"></a>  
 
@@ -409,13 +393,14 @@ An actual execution order should be in your upgrade documentation plan. The belo
 2. Upgrade vCenter server  
 3. Install vCenter Plugins  
 4. Upgrade ESXi Hosts  
-5. Upgrade the vSphere Distributed Switches  
-6. Upgrade VMware Tools  
-7. Upgrade VMware Virtual Hardware  
-8. Upgrade vSAN on-disk Format to 7.0 Compatibility  
-9. Upgrade Cisco UCS Infrastructure  
-10. Upgrade the Cisco UCS C-Series Servers with HUU  
-11. Upgrade storage array infrastructure  
+5. Upgrade the vSphere Distributed Switches
+6. Upgrade vSAN on-disk Format to 8.0 Compatibility
+7. Upgrade VMware Host Profiles
+8. Upgrade VMware Tools  
+9. Upgrade VMware Virtual Hardware    
+10. Upgrade Cisco UCS Infrastructure  
+11. Upgrade the Cisco UCS C-Series Servers with HUU  
+12. Upgrade storage array infrastructure  
 
 
 ## dVS v8 New Functionality <a name="dvs8newfunctionality"></a>  
@@ -433,13 +418,8 @@ Check that all integrations, users, monitoring, and automations are working. Per
 
 If you created snapshots, don't hold them for too long. Snapshots can stress the storage system, and they are only useful for a few hours; if you must, 2 days should be more than enough of a time window to have taken a good backup.  
 
-Great resource for vCenter performance:  
-
-https://blogs.vmware.com/performance/2021/09/extreme-performance-video-blog-series.html  
-
-vCenter now uses vCLS (vSphere Clustering Service):
-
-https://core.vmware.com/resource/introduction-vsphere-clustering-service-vcls  
+Great resource for vSphere 8 performance:  
+https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/techpaper/performance/vsphere-esxi-vcenter-server-80-performance-best-practices.pdf  
 
 https://kb.vmware.com/s/article/80472  
 
