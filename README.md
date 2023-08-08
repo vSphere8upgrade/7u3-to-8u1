@@ -85,8 +85,7 @@ Data Processing Units do exist in versions previous to vSphere 8.  They live in 
 
 ### Emergence of the Data Processing Unit - Isolation Layer
 In vSphere 8, an additional instance of ESXi is installed directly on the Data Processing Unit. This allows ESXi services to be offloaded to the DPU for increased performance  
-<img width="727" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/390fd0b9-7889-4b2d-a049-f2de4a1bb354">
-
+<img width="727" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/390fd0b9-7889-4b2d-a049-f2de4a1bb354">  
 
 ## vSphere with Tanzu <a name="vspheretanzu"></a>  
 
@@ -187,10 +186,13 @@ https://www.vmware.com/support/policies.html
 
 ![image](https://github.com/vSphere8upgrade/7u3-to-8u1/assets/16085267/b36d7a3e-2f8b-49de-8300-f65d74f7a08b)
 
-
 ## General Documentation on Upgrade Process & Recommendations <a name="genupgradeproc"></a>  
 
-Provide links to upgrade process
+Upgrading to vSphere 8  
+https://core.vmware.com/resource/upgrading-vsphere-8#:~:text=On%20the%20vSphere%20Client%20Home,host%20compatibility%20and%20click%20Next  
+
+vSphere 8v Upgrade Scenarios  
+https://core.vmware.com/resource/vsphere-8-upgrade-scenarios?path=/vsphere-8-upgrade-activity-path  
 
 It is **very important** to read the release notes for your version:  
 
@@ -201,7 +203,6 @@ vCenter Server 8 Update 1 Release Notes
 https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-vcenter-server-801-release-notes/index.html
 
 *__Note:__ There have been additional releases to vSphere and ESXi 8 u1 (ESXi - u1a, u1c; vCenter - u1a, u1b, u1c)*
-
 
 ## Highlights from vCenter & ESXi 8u1 Release Notes <a name="highlightsreleasenotes"></a>  
 
@@ -316,11 +317,13 @@ https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-lifecycle-manager/GUID-742
 
 __Switching from Using Baselines to Using Images__  
 
-vSphere 7 Environment - https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-lifecycle-manager/GUID-B54663AB-B1D1-4E87-8B8C-76FF2998A477.html  
+vSphere 7 Environment  
+https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-lifecycle-manager/GUID-B54663AB-B1D1-4E87-8B8C-76FF2998A477.html  
 
-vSphere 8 Environment - https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-lifecycle-manager/GUID-B54663AB-B1D1-4E87-8B8C-76FF2998A477.html  
+vSphere 8 Environment  
+https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-lifecycle-manager/GUID-B54663AB-B1D1-4E87-8B8C-76FF2998A477.html  
 
-__*Note*__ The best practice is to use your test environments to familiarize yourself with the new interface.  
+__*Note:*__ The best practice is to use your test environments to familiarize yourself with the new interface.  
 
 ## Licensing <a name="licensing"></a>  
 
@@ -387,7 +390,7 @@ https://luchodelorenzi.com/2020/05/28/proactively-checking-and-replacing-sts-cer
 
 # Upgrade Execution <a name="upgradeexecution"></a>  
 
-__*Note*__: This section is a good start, but you will have to adjust and expand to your environment and conditions.  Place the VCSA VM in a known host and stop automatic movement of VMs by putting DRS in manual mode. You may also clone the VCSA VM as an extra backup, or create a snapshot, but be aware that linked mode vCenters need a cold snapshot of all vCenters linked, and this is something you should be doing in coordination with GSS.
+__*Note:*__ This section is a good start, but you will have to adjust and expand to your environment and conditions.  Place the VCSA VM in a known host and stop automatic movement of VMs by putting DRS in manual mode. You may also clone the VCSA VM as an extra backup, or create a snapshot, but be aware that linked mode vCenters need a cold snapshot of all vCenters linked, and this is something you should be doing in coordination with GSS.
 
 ## Upgrade Day Preparation Checklist <a name="prepchecklist"></a>  
 
