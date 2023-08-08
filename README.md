@@ -32,7 +32,7 @@ This is a sub paragraph, formatted in heading 3 style
    a. [TAM Customer Webinars](#tamcustomerwebinars)  
    b. [Important Dates](#importantdates)  
    c. [General Documentation on Upgrade Process & Recommendations](#genupgradeproc)  
-   d. [Highlights From vCenter & ESXi 8u1 Release Notes](#highlightsreleasenotes)
+   d. [Highlights from vCenter & ESXi 8u1 Release Notes](#highlightsreleasenotes)
 4. [Upgrade Planning](#upgradeplanning)  
    a. [Minimizing Unknown Risk](#minimizerisk)  
    b. [Backups](#backups)  
@@ -46,7 +46,12 @@ This is a sub paragraph, formatted in heading 3 style
    j. [Check vCenter Integration Dependencies](#checkvcenterdep)  
    k. [VCSA Free Space](@vcsafreespace)  
    l. [vSphere Diagnostic Tool](#diagnostictool)  
-   m. [Further Reading](#furtherreading)  
+   m. [Further Reading](#furtherreading)
+5. [Upgrade Execution](#upgradeexecution)  
+   a. [Upgrade Day Preparation Checklist](#prepchecklist)  
+   b. [Upgrade Order List](#orderlist)  
+   c. [dVS v8 New Functionality](#dvs8newfunctionality)  
+6. [Post-Upgrade Considerations](#postupgradeconsiderations)  
 
 # vSphere 8 & 8u1 Announcements & Documentation <a name="v8announcementsanddocs"></a>  
 
@@ -75,11 +80,11 @@ VMware Security Advisories - https://www.vmware.com/security/advisories.html
 
 ## Useful Links <a name="usefullinks"></a>  
 
-core.vmware.com: The home for technical guidance on the core technologies that provide modern cloud infrastructure - https://core.vmware.com/vSphere  
-vSphere LIVE YouTube Channel: The monthly show where they talk about vSphere-related topics and answer everyone's questions live on the air - https://www.youtube.com/playlist?list=PLymLY4xJSThqJY4iPo2jhklqYbDr5RtW6  
-General VMware YouTube Channel: Anything and everything VMware videos - https://www.youtube.com/user/vmwaretv  
-VMware vSphere YouTube Channel: Videos related to vSphere - https://www.youtube.com/channel/UCN8FHFshMw-15AtFKWSLczA  
-__[Main KB] - List of vSphere 8.0 Knowledge base articles and Important Links (89756)__ - https://kb.vmware.com/s/article/89756 
+__core.vmware.com__: The home for technical guidance on the core technologies that provide modern cloud infrastructure - https://core.vmware.com/vSphere  
+__vSphere LIVE YouTube Channel__: The monthly show where they talk about vSphere-related topics and answer everyone's questions live on the air - https://www.youtube.com/playlist?list=PLymLY4xJSThqJY4iPo2jhklqYbDr5RtW6  
+__General VMware YouTube Channel__: Anything and everything VMware videos - https://www.youtube.com/user/vmwaretv  
+__VMware vSphere YouTube Channel__: Videos related to vSphere - https://www.youtube.com/channel/UCN8FHFshMw-15AtFKWSLczA  
+__[Main KB] List of vSphere 8.0 Knowledge base articles and Important Links (89756)__ - https://kb.vmware.com/s/article/89756 
 
 # vSphere 8 & 8u1 New Features <a name="newfeatures"></a>  
 
@@ -213,7 +218,7 @@ https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-vcenter-server-801-rele
 *__Note:__ There have been additional releases to vSphere and ESXi 8 u1 (ESXi - u1a, u1c; vCenter - u1a, u1b, u1c)*
 
 
-## Highlights From vCenter & ESXi 8u1 Release Notes <a name="highlightsreleasenotes"></a>  
+## Highlights from vCenter & ESXi 8u1 Release Notes <a name="highlightsreleasenotes"></a>  
 
 - vSphere Configuration Profiles
 - With vSphere 8.0 Update 1, vSphere Distributed Services Engine adds support for:  
@@ -387,21 +392,20 @@ https://luchodelorenzi.com/2020/04/10/pre-upgrade-considerations-in-multi-vcente
 
 https://luchodelorenzi.com/2020/05/28/proactively-checking-and-replacing-sts-certificate-on-vsphere-6-x-7-x/  
 
-# Upgrade execution
+# Upgrade Execution <a name="upgradeexecution"></a>  
 
+__*Note*__: This section is a good start, but you will have to adjust and expand to your environment and conditions.  Place the VCSA VM in a known host and stop automatic movement of VMs by putting DRS in manual mode. You may also clone the VCSA VM as an extra backup, or create a snapshot, but be aware that linked mode vCenters need a cold snapshot of all vCenters linked, and this is something you should be doing in coordination with GSS.
 
-This section is a good start, but you will have to adjust and expand to your environment and conditions.  Place the VCSA VM in a known host and stop automatic movement of VMs by putting DRS in manual mode. You may also clone the VCSA VM as an extra backup, or create a snapshot, but be aware that linked mode vCenters need a cold snapshot of all vCenters linked, and this is something you should be doing in coordination with GSS.
-
-## Upgrade day preparation checklist
+## Upgrade Day Preparation Checklist <a name="prepchecklist"></a>  
 
 1.	Finish upgrade documentation plan  
 2.	Gather temporary IP address for vCenter(s)  
 3.	Gather needed software and hardware ISOs (confirm md5/sha-1 checksums to make sure they aren't corrupted)  
 4.	Test ESXi host remote access credentials  
 5.	Set a longer maintenance window than needed  
-6.	Have proactive GSS ticket handy  
+6.	Have a proactive GSS ticket handy  
 
-## Upgrade order list
+## Upgrade Order List <a name="orderlist"></a>  
 
 An actual execution order should be in your upgrade documentation plan. The below is an example (which is not meant to be comprehensive):  
 
@@ -418,7 +422,7 @@ An actual execution order should be in your upgrade documentation plan. The belo
 11. Upgrade storage array infrastructure  
 
 
-## dVS v8 new functionality
+## dVS v8 New Functionality <a name="dvs8newfunctionality"></a>  
 
 v8 includes new functionalities for the distributed virtual switch, which can be reviewed here:
 
@@ -427,9 +431,9 @@ https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/
 <img width="984" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/1a469a9d-7c80-45de-89ea-54ae3d6c54c3">
 
 
-# Post upgrade considerations
+# Post-Upgrade Considerations <a name="postupgradeconsiderations"></a>  
 
-Check that all integrations, users, monitoring and automations are working. Perform tests. As you work out any issues in each environment, document the fixes as lessons learned for the next environment.  
+Check that all integrations, users, monitoring, and automations are working. Perform tests. As you work out any issues in each environment, document the fixes as lessons learned for the next environment.  
 
 If you created snapshots, don't hold them for too long. Snapshots can stress the storage system, and they are only useful for a few hours; if you must, 2 days should be more than enough of a time window to have taken a good backup.  
 
@@ -443,4 +447,4 @@ https://core.vmware.com/resource/introduction-vsphere-clustering-service-vcls
 
 https://kb.vmware.com/s/article/80472  
 
-Enjoy vCenter 7!
+Enjoy vCenter 8u1!
