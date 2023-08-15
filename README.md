@@ -345,6 +345,11 @@ There is a specific upgrade order when several VMware products are installed tog
 
 https://kb.vmware.com/s/article/89745  
 
+<img width="886" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/e02fedb5-cfa3-45ec-9480-40724d740ec2">  
+
+<img width="855" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/d09035ae-6abd-4891-b56d-28c0c50a7dd0">  
+
+
 ## Check vCenter Integration Dependencies <a name="checkvcenterdep"></a>
 
 vSphere integrates with many solutions. Most of the integrations are done at the vCenter level. These include both VMware and 3rd party solutions.  
@@ -363,6 +368,26 @@ For example, NSX is required to be at minimum version 4.0.1 to be supported with
 
 Develop this list _before_ starting upgrades. It will bring clarity of what systems share integrations (for example, the same backup platform may service both dev and production environments) and will save many avoidable headaches.
 
+### Minimum VMware product versions supported in vSphere 8  
+
+| **Product**                        	| **Minimum Supported Version**                                                     	| **Notes**                                                                                                                             	|
+|------------------------------------	|-----------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------	|
+| vCenter Server                     	| 6.7*                                                                              	| vCenter Server must be at a minimum of 6.7 to upgrade to 8.0                                                                          	|
+| ESXi                               	| 6.7*                                                                              	| Hosts must be at a minimum of 6.7 to be upgraded to ESXi 8.0.  Hosts must be at a minimum of 6.7 to be managed by vCenter Server 8.0. 	|
+| vSAN                               	| 6.7                                                                               	|                                                                                                                                       	|
+| VMware Tools                       	| 12.0.5                                                                            	|                                                                                                                                       	|
+| NSX                                	| 4.0.1.1                                                                           	|                                                                                                                                       	|
+| Site Recovery Manager              	| 8.6                                                                               	|                                                                                                                                       	|
+| vSphere Replication                	| 8.6                                                                               	|                                                                                                                                       	|
+| vRealize Suite Lifecycle Manager   	| 8.8.2                                                                             	|                                                                                                                                       	|
+| Identity Manager                   	| Managed (Using vRealize/Aria Suite Lifecycle Manager): 3.3.6                      	|                                                                                                                                       	|
+| vRealize Log Insight               	| Unmanaged: 8.2 ** Managed (Using vRealize/Aria Suite Lifecycle Manager): 8.6.2    	|                                                                                                                                       	|
+| vRealize Operations                	| Unmanaged: 8.2 *** Managed (Using vRealize/Aria Suite Lifecycle Manager): 8.5 *** 	|                                                                                                                                       	|
+| vRealize Network Insight           	| Unmanaged: 6.7 Managed (Using vRealize/Aria Suite Lifecycle Manager): 6.7         	|                                                                                                                                       	|
+| vRealize Automation                	| Managed (Using vRealize/Aria Suite Lifecycle Manager): 8.9                        	|                                                                                                                                       	|
+| vRealize Orchestrator (Standalone) 	| Unmanaged: 8.9 Managed (Using vRealize/Aria Suite Lifecycle Manager): 8.9         	|                                                                                                                                       	|
+| Horizon 8                          	| 2206                                                                              	|                                                                                                                                       	|
+  
 ## VCSA Free Space <a name="vcsafreespace"></a>  
 
 You will get an option to migrate the most essential data, or to also include tasks, events and performance metrics. You can compare the size of the data with the available free space in the source vCenter. When the data is larger than available free space, you will be asked for a different location than / . Typically, you will find the VUM partition has large free space (using the command _df -h_) and can provide that, check this [blog post by Luciano Patrao](https://www.provirtualzone.com/how-to-add-extra-space-to-vcenter-for-the-upgrade/) or consult with GSS.
