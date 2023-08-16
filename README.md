@@ -11,14 +11,15 @@
    d. [Lifecycle Management](#lifecyclemgmt)  
    e. [Artificial Intelligence & Machine Learning](#aiml)  
    f. [Guest OS & Workloads](#osworkloads)  
-   g. [vSAN 8 Express Storage Architecture (ESA)](#vsan8esa)  
-   h. [Resource Management](#resourcemgmt)  
-   i. [Security & Compliance](#seccompliance)  
-3. [vSphere 8u1 Upgrade Tips](#8u1upgradetips)  
+   g. [Supercharge Workloads](#superchargeworkloads)  
+   h. [vSAN 8 Express Storage Architecture (ESA)](#vsan8esa)  
+   i. [Resource Management](#resourcemgmt)  
+   j. [Security & Compliance](#seccompliance)  
+4. [vSphere 8u1 Upgrade Tips](#8u1upgradetips)  
    a. [TAM Customer Webinars](#tamcustomerwebinars)  
    b. [Important Dates](#importantdates)  
    c. [General Documentation on Upgrade Process & Recommendations](#genupgradeproc)  
-4. [Upgrade Planning](#upgradeplanning)  
+5. [Upgrade Planning](#upgradeplanning)  
    a. [Minimizing Unknown Risk](#minimizerisk)  
    b. [Backups](#backups)  
    c. [Target Environments with Less Risk First](#target)  
@@ -31,11 +32,11 @@
    j. [Check vCenter Integration Dependencies](#checkvcenterdep)  
    k. [VCSA Free Space](@vcsafreespace)  
    l. [vSphere Diagnostic Tool](#diagnostictool)  
-5. [Upgrade Execution](#upgradeexecution)  
+6. [Upgrade Execution](#upgradeexecution)  
    a. [Upgrade Day Preparation Checklist](#prepchecklist)  
    b. [Upgrade Order List](#orderlist)  
    c. [dVS v8 New Functionality](#dvs8newfunctionality)  
-6. [Post-Upgrade Considerations](#postupgradeconsiderations)  
+7. [Post-Upgrade Considerations](#postupgradeconsiderations)  
 
 # vSphere 8 & 8u1 Announcements & Documentation <a name="v8announcementsanddocs"></a>  
 
@@ -136,7 +137,17 @@ In vSphere 8, an additional instance of ESXi is installed directly on the Data P
 - Increased availability with vSphere Zones  
 - Declarative cluster lifecycle with ClusterClass  
 - Customize PhotonOS or Ubuntu images  
-- Pinniped Integration
+- Pinniped Integration  
+------------------  
+- vSphere with Tanzu Supervisor Services - Run Tanzu Supervisor Services on Distributed Switches  
+<img width="913" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/4cb8cd3f-9865-4eda-9652-d2381ee209ca">  
+
+- Flexible & Customizable VM Images - vSphere with Tanzu VM Service “Bring Your Own Image”  
+<img width="486" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/dd236203-1d7b-454a-81a0-e1dc7a7c3578">
+<img width="809" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/7f603885-86d8-44d7-9985-e7b7ece9148c">  
+
+- Easy VM Consoles without the vSphere Client - vSphere with Tanzu VM Consoles  
+<img width="865" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/36c390cf-68af-4d2f-92e0-445ed25f0d4f">  
 
 ## Lifecycle Management <a name="lifecyclemgmt"></a>  
 
@@ -150,9 +161,18 @@ In vSphere 8, an additional instance of ESXi is installed directly on the Data P
 <img width="440" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/1eca31e3-2724-49f3-bd32-df3145a4e6a7"> <img width="310" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/3f55ceb3-12f9-4692-ae3a-845997f13bc0">  
 <img width="373" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/75a423e5-7ee6-428c-ad94-72eb822fa14c"> <img width="310" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/349ebed1-bf5c-4a99-8bb0-2b64073f996d">  
 
-- vSphere Configuration Profiles - Configuration Management at Scale
+- vSphere Configuration Profiles - Configuration Management at Scale  
+   - Define & Enforce Configurations for ESXi Hosts  
+  <img width="823" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/0d58c4fa-cf58-4dcb-945b-113ecf8321cc">  
 
-<img width="565" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/ec9cd842-1a97-4538-9874-646ce0b59d73"> <img width="310" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/a743103e-1d5a-4208-b1cf-acd98985f3c8">  
+   - Apply Desired State to Existing Clusters  
+  <img width="913" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/0d2d5513-b4f5-4af4-a6db-0af4313f0000">  
+
+   - Manage Desired State when Creating a Cluster  
+  <img width="897" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/280c85df-6673-4e61-aa16-8f8b30379920">  
+
+   - Patch Standalone & Edge Hosts Easily  
+  <img width="915" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/887949f6-8617-4877-8ba1-1e9d67d8e707">  
 
 ## Artificial Intelligence & Machine Learning <a name="aiml"></a> 
 
@@ -185,6 +205,17 @@ In vSphere 8, an additional instance of ESXi is installed directly on the Data P
 - Compute Maximums  
 <img width="571" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/f74a6390-f24b-491d-ab03-d27c20eb8ed6">  
 
+## Supercharge Workloads <a name="superchargeworkloads"></a>  
+
+- Hot-Pluggable NVMe Devices Reduce Downtime - VM DirectPath I/O Hot-Plug  
+<img width="796" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/eb4dcb7b-dd2b-4eb4-940f-6c530732c69f">  
+
+- Host Different Types of Workloads on a Single GPU - GPU Workload Flexibility  
+<img width="917" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/4b8e473f-b6d1-40e5-a9fb-935a7895b98b">
+
+- Faster & More Scalable GPU Interconnects Mean Better AI - NVIDIA NVSwitch
+<img width="862" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/7de7c5f0-6319-4bce-8b01-c617cd42a54d">
+
 ## vSAN 8 Express Storage Architecture (ESA) <a name="vsan8esa"></a> 
 
 - Optional Next Generation Architecture built into vSAN
@@ -199,15 +230,26 @@ In vSphere 8, an additional instance of ESXi is installed directly on the Data P
 Uses Memory Stats for better VM placement  
 <img width="581" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/98d962f5-b19b-4056-919e-9d4a72158e24">  
 
-- Monitor Energy and Carbon Emissions - vSphere Green Metrics  
+- Proactive Self-Service vSphere Diagnostics - Integrated Skyline Health Diagnostics Plug-in  
+<img width="913" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/3022baea-c616-4a8d-84ad-75e592ca1f1c">  
+
+- Monitor Energy & Carbon Emissions - vSphere Green Metrics  
 <img width="889" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/ae098b36-5682-4002-9112-1af8be4373a7">  
+
+- Individual Virtual Machine Power Consumption Statistics - Enhanced vSphere Green Metrics  
+<img width="888" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/5d5be904-2eb6-44bd-a1ce-cd977df0dd34">  
 
 ## Security & Compliance <a name="seccompliance"></a>  
 
 - Improvements to SGX  
 - TLS 1.2 & Better Cipher Suites  
+- ESXi Quick Book for Security Systems  
 - Prevent Untrusted Binaries  
-- More Secure Product Defaults  
+- vSphere Fault Tolerance with vTPM  
+- vSphere NFS Datastore VMkernel Binding  
+- More Secure Product Defaults
+- vCenter Server Direct Federation with Okta Identity Providers  
+
 <img width="802" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/74979d47-59b2-401c-9035-d0f26b69f617">  
 
 # vSphere 8u1 Upgrade Tips <a name="8u1upgradetips"></a>  
