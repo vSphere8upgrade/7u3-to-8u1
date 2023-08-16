@@ -338,6 +338,8 @@ Uses Memory Stats for better VM placement
 
 <img width="802" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/74979d47-59b2-401c-9035-d0f26b69f617">  
 
+---  
+
 # vSphere 8u1 Upgrade Tips <a name="8u1upgradetips"></a>  
 
 ## TAM Customer Webinars <a name="tamcustomerwebinars"></a>  
