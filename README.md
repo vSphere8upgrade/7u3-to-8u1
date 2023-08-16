@@ -42,26 +42,81 @@
 
 ## Helpful Videos & Blog Posts <a name="videosandblogs"></a>  
 
-[Video] Why Upgrade to vSphere 8 - https://www.youtube.com/watch?v=4Z3sTJdXOjg  
-New Release Model for vSphere 8 - https://blogs.vmware.com/vsphere/2022/10/new-release-model-for-vsphere-8.html  
-Introducing vSphere 8: The Enterprise Workload Platform - https://blogs.vmware.com/vsphere/2022/08/introducing-vsphere-8-the-enterprise-workload-platform.html  
-What's New in vSphere 8 - https://core.vmware.com/resource/whats-new-vsphere-8  
-[Video] vSphere 8 What's New - https://core.vmware.com/?share=video3697&title=video-vsphere-8-whats-new  
-vSphere on DPUs: NOW Available on vSphere 8 - https://core.vmware.com/blog/vsphere-dpus-now-available-vsphere-8  
-Introducing vSphere 8 Update 1 - https://blogs.vmware.com/vsphere/2023/03/announcing-vsphere-8-update-1.html  
-What's New in vSphere 8 Update 1 - https://core.vmware.com/resource/whats-new-vsphere-8-update-1  
-[Video] vSphere 8 Update 1 What's New - https://core.vmware.com/?share=video4042&title=video-vsphere-8-update-1-whats-new  
-What's New with vSphere 8 (and 8u1) Core Storage - https://core.vmware.com/resource/whats-new-vsphere-8-core-storage#section1  
-vSphere LIVE YouTube Channel - The monthly show where we talk about vSphere-related topics and answer everyone's questions live on the air - https://www.youtube.com/playlist?list=PLymLY4xJSThqJY4iPo2jhklqYbDr5RtW6  
+<table class="tg">
+<tbody>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">[Video] Why Upgrade to vSphere 8</span></td>
+    <td class="tg-0lax">https://www.youtube.com/watch?v=4Z3sTJdXOjg</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">New Release Model for vSphere 8</span></td>
+    <td class="tg-0lax">https://blogs.vmware.com/vsphere/2022/10/new-release-model-for-vsphere-8.html</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">Introducing vSphere 8: The Enterprise Workload Platform</span></td>
+    <td class="tg-0lax">https://blogs.vmware.com/vsphere/2022/08/introducing-vsphere-8-the-enterprise-workload-platform.html</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">What's New in vSphere 8</span></td>
+    <td class="tg-0lax">https://core.vmware.com/resource/whats-new-vsphere-8</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">[Video] vSphere 8 What's New</span></td>
+    <td class="tg-0lax">https://core.vmware.com/?share=video3697&amp;title=video-vsphere-8-whats-new</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">vSphere on DPUs: NOW Available on vSphere 8</span></td>
+    <td class="tg-0lax">https://core.vmware.com/blog/vsphere-dpus-now-available-vsphere-8</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Introducing vSphere 8 Update 1</td>
+    <td class="tg-0lax">https://blogs.vmware.com/vsphere/2023/03/announcing-vsphere-8-update-1.html</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">What's New in vSphere 8 Update 1</td>
+    <td class="tg-0lax">https://core.vmware.com/resource/whats-new-vsphere-8-update-1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">[Video] vSphere 8 Update 1 What's New</td>
+    <td class="tg-0lax">https://core.vmware.com/?share=video4042&amp;title=video-vsphere-8-update-1-whats-new</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">What's New with vSphere 8 (and 8u1) Core Storage</td>
+    <td class="tg-0lax">https://core.vmware.com/resource/whats-new-vsphere-8-core-storage#section1</td>
+  </tr>
+</tbody>
+</table>
 
 ## General Documentation <a name="generaldocumentation"></a>  
 
-vSphere 8 Release Notes - https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vmware-vsphere-80-release-notes/index.html  
-vSphere Documentation - https://docs.vmware.com/en/VMware-vSphere/index.html  
-Configuration Maximums - https://configmax.esp.vmware.com/guest?vmwareproduct=vSphere&release=vSphere%208.0&categories=1-0  
-VMware Firewall Ports & Protocols - https://ports.esp.vmware.com/  
-Product Interoperability Matrix - https://interopmatrix.vmware.com/Interoperability  
-VMware Security Advisories - https://www.vmware.com/security/advisories.html  
+<table class="tg">
+<tbody>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">vSphere 8 Release Notes</span></td>
+    <td class="tg-0pky"><a href="https://www.youtube.com/watch?v=4Z3sTJdXOjg" target="_blank" rel="noopener noreferrer">https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vmware-vsphere-80-release-notes/index.html</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">vSphere Documentation</span></td>
+    <td class="tg-0pky"><a href="https://blogs.vmware.com/vsphere/2022/10/new-release-model-for-vsphere-8.html" target="_blank" rel="noopener noreferrer">https://docs.vmware.com/en/VMware-vSphere/index.html</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">Configuration Maximums</span></td>
+    <td class="tg-0pky"><a href="https://blogs.vmware.com/vsphere/2022/08/introducing-vsphere-8-the-enterprise-workload-platform.html" target="_blank" rel="noopener noreferrer">https://configmax.esp.vmware.com/guest?vmwareproduct=vSphere&amp;release=vSphere%208.0&amp;categories=1-0</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">VMware Firewall Ports &amp; Protocols</span></td>
+    <td class="tg-0pky"><a href="https://core.vmware.com/resource/whats-new-vsphere-8" target="_blank" rel="noopener noreferrer">https://ports.esp.vmware.com/</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">Product Interoperability Matrix</span></td>
+    <td class="tg-0pky"><a href="https://core.vmware.com/?share=video3697&amp;title=video-vsphere-8-whats-new" target="_blank" rel="noopener noreferrer">https://interopmatrix.vmware.com/Interoperability</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">VMware Security Advisories</span></td>
+    <td class="tg-0pky"><a href="https://www.vmware.com/security/advisories.html" target="_blank" rel="noopener noreferrer"><span style="font-weight:400;font-style:normal;text-decoration:underline">https://www.vmware.com/security/advisories.html</span></a></td>
+  </tr>
+</tbody>
+</table>  
 
 ## Useful Links <a name="usefullinks"></a>  
 
