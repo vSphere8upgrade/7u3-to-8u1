@@ -463,11 +463,13 @@ An upgrade from v7 to v8 will require updating licenses. Document old license ke
 
 ## Security Hardening <a name="sechardening"></a>  
 
-A complete review of hardening steps has to be done with this upgrade. The steps that were used to harden v6.7 will be different in v7, although many will be similar. Always refer to the official hardening guide link to find the best recommendation:  
+A complete review of hardening steps has to be done with this upgrade. The steps that were used to harden v7 will be different in v8, although many will be similar. Always refer to the official hardening guide link to find the best recommendation:  
 
-https://www.vmware.com/security/hardening-guides.html  
+VMware Security Hardening Guides - https://www.vmware.com/security/hardening-guides.html  
 
-https://blogs.vmware.com/vsphere/2020/10/announcing-the-vsphere-security-configuration-guide-7.html    
+vSphere 8 Security & Configuration Guide - https://core.vmware.com/vmware-vsphere-8-security-configuration-guide  
+
+Cloud Infrastructure Security Configuration & Hardening - https://core.vmware.com/security-configuration-guide  
 
 ## Follow Recommended Order for All VMware Component Upgrades <a name="followrecorder"></a>
 
@@ -517,9 +519,11 @@ Develop this list _before_ starting upgrades. It will bring clarity of what syst
 | vRealize Automation                	| Managed (Using vRealize/Aria Suite Lifecycle Manager): 8.9                        	|                                                                                                                                       	|
 | vRealize Orchestrator (Standalone) 	| Unmanaged: 8.9 Managed (Using vRealize/Aria Suite Lifecycle Manager): 8.9         	|                                                                                                                                       	|
 | Horizon 8                          	| 2206                                                                              	|                                                                                                                                       	|
+<img width="811" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/1266aa6b-108d-4f55-9d64-172275120539">  
   
 ## VCSA Free Space <a name="vcsafreespace"></a>  
 
+__(THIS NEEDS UPDATING)__
 You will get an option to migrate the most essential data, or to also include tasks, events and performance metrics. You can compare the size of the data with the available free space in the source vCenter. When the data is larger than available free space, you will be asked for a different location than / . Typically, you will find the VUM partition has large free space (using the command _df -h_) and can provide that, check this [blog post by Luciano Patrao](https://www.provirtualzone.com/how-to-add-extra-space-to-vcenter-for-the-upgrade/) or consult with GSS.
 
 ![VCSA upgrade data option](https://raw.githubusercontent.com/arielsanchezmora/vSphere-67-Upgrade-to-7u3/main/images/vSphere67-Upgrade-7u3-image10.jpg)
