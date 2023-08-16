@@ -120,11 +120,42 @@
 
 ## Useful Links <a name="usefullinks"></a>  
 
-__core.vmware.com__: The home for technical guidance on the core technologies that provide modern cloud infrastructure - https://core.vmware.com/vSphere  
-__vSphere LIVE YouTube Channel__: The monthly show where they talk about vSphere-related topics and answer everyone's questions live on the air - https://www.youtube.com/playlist?list=PLymLY4xJSThqJY4iPo2jhklqYbDr5RtW6  
-__General VMware YouTube Channel__: Anything and everything VMware videos - https://www.youtube.com/user/vmwaretv  
-__VMware vSphere YouTube Channel__: Videos related to vSphere - https://www.youtube.com/channel/UCN8FHFshMw-15AtFKWSLczA  
-__[Main KB] List of vSphere 8.0 Knowledge base articles and Important Links (89756)__ - https://kb.vmware.com/s/article/89756 
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax">Site</th>
+    <th class="tg-0lax">Description</th>
+    <th class="tg-0lax">Link</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">core.vmware.com</td>
+    <td class="tg-0lax">The home for technical guidance on the core technologies that provide modern cloud infrastructure</td>
+    <td class="tg-0lax">https://core.vmware.com/vSphere</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">vSphere LIVE YouTube Channel</td>
+    <td class="tg-0lax">The monthly show where they talk about vSphere-related topics and answer everyone's questions live on the air</td>
+    <td class="tg-0lax">https://www.youtube.com/playlist?list=PLymLY4xJSThqJY4iPo2jhklqYbDr5RtW6</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">General VMware YouTube Channel</td>
+    <td class="tg-0lax">Anything and everything VMware videos</td>
+    <td class="tg-0lax">https://www.youtube.com/user/vmwaretv</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">VMware vSphere YouTube Channel</td>
+    <td class="tg-0lax">Videos related to vSphere</td>
+    <td class="tg-0lax">https://www.youtube.com/channel/UCN8FHFshMw-15AtFKWSLczA</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">vSphere 8.0 KB Articles and Important Links </td>
+    <td class="tg-0lax">List of vSphere 8.0 Knowledge base articles and Important Links (89756) [Main KB]</td>
+    <td class="tg-0lax">https://kb.vmware.com/s/article/89756</td>
+  </tr>
+</tbody>
+</table>   
 
 # vSphere 8 & 8u1 New Features <a name="newfeatures"></a>  
 
