@@ -30,8 +30,7 @@
    h. [Security Hardening](#sechardening)  
    i. [Follow Recommended Order for All VMware Component Upgrades](#followrecorder)  
    j. [Check vCenter Integration Dependencies](#checkvcenterdep)  
-   k. [VCSA Free Space](@vcsafreespace)  
-   l. [vSphere Diagnostic Tool](#diagnostictool)  
+   k. [vSphere Diagnostic Tool](#diagnostictool)  
 6. [Upgrade Execution](#upgradeexecution)  
    a. [Upgrade Day Preparation Checklist](#prepchecklist)  
    b. [Upgrade Order List](#orderlist)  
@@ -575,7 +574,5 @@ If you created snapshots, don't hold them for too long. Snapshots can stress the
 
 Great resource for vSphere 8 performance:  
 https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/techpaper/performance/vsphere-esxi-vcenter-server-80-performance-best-practices.pdf  
-
-https://kb.vmware.com/s/article/80472  
 
 Enjoy vCenter 8u1!
