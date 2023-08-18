@@ -521,13 +521,6 @@ Develop this list _before_ starting upgrades. It will bring clarity of what syst
 | Horizon 8                          	| 2206                                                                              	|                                                                                                                                       	|
 <img width="811" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/1266aa6b-108d-4f55-9d64-172275120539">  
   
-## VCSA Free Space <a name="vcsafreespace"></a>  
-
-__(THIS NEEDS UPDATING)__
-You will get an option to migrate the most essential data, or to also include tasks, events and performance metrics. You can compare the size of the data with the available free space in the source vCenter. When the data is larger than available free space, you will be asked for a different location than / . Typically, you will find the VUM partition has large free space (using the command _df -h_) and can provide that, check this [blog post by Luciano Patrao](https://www.provirtualzone.com/how-to-add-extra-space-to-vcenter-for-the-upgrade/) or consult with GSS.
-
-![VCSA upgrade data option](https://raw.githubusercontent.com/arielsanchezmora/vSphere-67-Upgrade-to-7u3/main/images/vSphere67-Upgrade-7u3-image10.jpg)
-
 ## vSphere Diagnostic Tool <a name="diagnostictool"></a>  
 
 A tool that VMware GSS has made available to the public in fling form is able to catch many problems in vCenter environments before they become an issue mid-upgrade. It is a good idea you run this and share the output in your proactive GSS ticket, as it may show some tasks that need to be performed before you attempt the upgrade.  
