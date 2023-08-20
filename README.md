@@ -441,7 +441,7 @@ Develop and **document** a hardware plan, both for software and hardware firmwar
 
 ### vSphere Lifecycle Manager (VUM Replacement) 
 
-It’s important to get familiarized with the replacement for VUM (vSphere Upgrade Manager) called vSphere Lifecycle Management (vLCM). VUM is deprecated in vSphere 8 which means vSphere 8 is going to be the last vSphere release that supports baseline lifecycle management. If you have not switched to vSphere Lifecycle Manager single image, Please review the Switching from Using Baselines to Using Images links below.
+It’s important to get familiarized with the replacement for VUM (vSphere Upgrade Manager) called vSphere Lifecycle Management (vLCM). VUM is deprecated in vSphere 8 which means vSphere 8 is going to be the last vSphere release that supports baseline lifecycle management. If you have not switched to vSphere Lifecycle Manager single image, please review the __Switching from using baselines to using images__ link below.
 
 __Introduction to vLCM__  
 
