@@ -452,8 +452,8 @@ https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-lifecycle-manager/GUID-742
 
 __Switching from Using Baselines to Using Images__  
 
-vSphere 7 Environment  
-https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-lifecycle-manager/GUID-B54663AB-B1D1-4E87-8B8C-76FF2998A477.html  
+vSphere 7 Environment  [
+https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-lifecycle-manager/GUID-B54663AB-B1D1-4E87-8B8C-76FF2998A477.html  ](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere-lifecycle-manager.doc/GUID-B54663AB-B1D1-4E87-8B8C-76FF2998A477.html)  
 
 vSphere 8 Environment  
 https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-lifecycle-manager/GUID-B54663AB-B1D1-4E87-8B8C-76FF2998A477.html  
