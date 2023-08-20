@@ -366,6 +366,7 @@ https://core.vmware.com/resource/upgrading-vsphere-8#:~:text=On%20the%20vSphere%
 vSphere 8v Upgrade Scenarios  
 https://core.vmware.com/resource/vsphere-8-upgrade-scenarios?path=/vsphere-8-upgrade-activity-path  
 
+
 It is **very important** to read the release notes for your version:  
 
 vSphere ESXi 8 Update 1 Release Notes  
