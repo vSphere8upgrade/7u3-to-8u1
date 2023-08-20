@@ -25,17 +25,18 @@
    c. [Target Environments with Less Risk First](#target)  
    d. [dVS Upgrades Carry Some Risk](#dvsrisk)  
    e. [Use GSS & TAM Services to Assist Prior to the Upgrade](#usetamgss)  
-   f. [Hardware Considerations](#hwconsiderations)  
-   g. [Licensing](#licensing)  
-   h. [Security Hardening](#sechardening)  
-   i. [Follow Recommended Order for All VMware Component Upgrades](#followrecorder)  
-   j. [Check vCenter Integration Dependencies](#checkvcenterdep)  
-   k. [vSphere Diagnostic Tool](#diagnostictool)  
-6. [Upgrade Execution](#upgradeexecution)  
+   f. [Hardware Considerations](#hwconsiderations)
+   g. [vSphere Lifecycle Manager](#vSphereLifecycleManager)
+   h. [Licensing](#licensing)  
+   i. [Security Hardening](#sechardening)  
+   j. [Follow Recommended Order for All VMware Component Upgrades](#followrecorder)  
+   k. [Check vCenter Integration Dependencies](#checkvcenterdep)  
+   l. [vSphere Diagnostic Tool](#diagnostictool)  
+7. [Upgrade Execution](#upgradeexecution)  
    a. [Upgrade Day Preparation Checklist](#prepchecklist)  
    b. [Upgrade Order List](#orderlist)  
    c. [dVS v8 New Functionality](#dvs8newfunctionality)  
-7. [Post-Upgrade Considerations](#postupgradeconsiderations)  
+8. [Post-Upgrade Considerations](#postupgradeconsiderations)  
 
 # vSphere 8 & 8u1 Announcements & Documentation <a name="v8announcementsanddocs"></a>  
 
@@ -439,7 +440,7 @@ Develop and **document** a hardware plan, both for software and hardware firmwar
 
 ![image](https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/aed9f938-65e3-4b52-8651-e34c34b9e8e0)  
 
-### vSphere Lifecycle Manager (VUM Replacement) 
+## vSphere Lifecycle Manager (VUM Replacement) <a name="vSphereLifecycleManager"></a>
 
 It’s important to get familiarized with the replacement for VUM (vSphere Upgrade Manager) called vSphere Lifecycle Management (vLCM). VUM is deprecated in vSphere 8 which means vSphere 8 is going to be the last vSphere release that supports baseline lifecycle management. If you have not switched to vSphere Lifecycle Manager single image, please review the __Switching from using baselines to using images__ link below.
 
