@@ -26,7 +26,7 @@
    d. [dVS Upgrades Carry Some Risk](#dvsrisk)  
    e. [Use GSS & TAM Services to Assist Prior to the Upgrade](#usetamgss)  
    f. [Hardware Considerations](#hwconsiderations)  
-   g. [vSphere Lifecycle Manager](#vSphereLifecycleManager)  
+   g. [vSphere Lifecycle Manager](#vspherelifecyclemanager)  
    h. [Licensing](#licensing)  
    i. [Security Hardening](#sechardening)  
    j. [Follow Recommended Order for All VMware Component Upgrades](#followrecorder)  
@@ -440,7 +440,7 @@ Develop and **document** a hardware plan, both for software and hardware firmwar
 
 ![image](https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/aed9f938-65e3-4b52-8651-e34c34b9e8e0)  
 
-## vSphere Lifecycle Manager (VUM Replacement) <a name="vSphereLifecycleManager"></a>
+## vSphere Lifecycle Manager (VUM Replacement) <a name="vspherelifecyclemanager"></a>
 
 It’s important to get familiarized with the replacement for VUM (vSphere Upgrade Manager) called vSphere Lifecycle Management (vLCM). VUM is deprecated in vSphere 8 which means vSphere 8 is going to be the last vSphere release that supports baseline lifecycle management. If you have not switched to vSphere Lifecycle Manager single image, please review the __Switching from using baselines to using images__ link below.
 
