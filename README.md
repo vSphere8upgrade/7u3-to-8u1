@@ -344,7 +344,7 @@ Uses Memory Stats for better VM placement
 ## TAM Customer Webinars <a name="tamcustomerwebinars"></a>  
 
 | Webinar title | Link |
-| :--- | :---: | ---: |
+| ---   |   --- |
 | vSphere 8 - What's New | https://www.youtube.com/watch?v=bXabKxGOAP4&list=PLXw1EF8ZER1gvH_YBBZ6N9xujJXT6E9eh  |
 | What's New with vSAN 8 including Express Storage Architecture | https://www.youtube.com/watch?v=fa8Ax6sPmps  |
 | vSphere Lifecycle Management | https://www.youtube.com/watch?v=IUENQZeHalw&list=PLXw1EF8ZER1hPcEdIju9_hnzlMCbBgvRw&index=9   |
