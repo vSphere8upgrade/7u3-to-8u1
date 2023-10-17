@@ -6,7 +6,7 @@
    c. [Useful Links](#usefullinks)  
 2. [vSphere 8 & 8u1 New Features](#newfeatures)  
    a. [Highlights from vCenter & ESXi 8u1 Release Notes](#highlightsreleasenotes)  
-   b. [Highlights from vCenter & ESXi 8U2 Release Notes](#U2highlightsreleasenotes)   
+   b. [Highlights from vCenter & ESXi 8u2 Release Notes](#U2highlightsreleasenotes)   
    c. [vSphere Distributed Services Engine](#vspheredistributedservicesengine)  
    d. [vSphere with Tanzu](#vspheretanzu)  
    e. [Lifecycle Management](#lifecyclemgmt)  
@@ -17,11 +17,11 @@
    j. [vSAN Max](#vsanmax)  
    k. [Resource Management](#resourcemgmt)  
    l. [Security & Compliance](#seccompliance)  
-4. [vSphere 8u1 Upgrade Tips](#8u1upgradetips)  
+3. [vSphere 8u1 Upgrade Tips](#8u1upgradetips)  
    a. [TAM Customer Webinars](#tamcustomerwebinars)  
    b. [Important Dates](#importantdates)  
    c. [General Documentation on Upgrade Process & Recommendations](#genupgradeproc)  
-5. [Upgrade Planning](#upgradeplanning)  
+4. [Upgrade Planning](#upgradeplanning)  
    a. [Minimizing Unknown Risk](#minimizerisk)  
    b. [Backups](#backups)  
    c. [Target Environments with Less Risk First](#target)  
@@ -34,11 +34,11 @@
    j. [Follow Recommended Order for All VMware Component Upgrades](#followrecorder)  
    k. [Check vCenter Integration Dependencies](#checkvcenterdep)  
    l. [vSphere Diagnostic Tool](#diagnostictool)  
-7. [Upgrade Execution](#upgradeexecution)  
+5. [Upgrade Execution](#upgradeexecution)  
    a. [Upgrade Day Preparation Checklist](#prepchecklist)  
    b. [Upgrade Order List](#orderlist)  
    c. [dVS v8 New Functionality](#dvs8newfunctionality)  
-8. [Post-Upgrade Considerations](#postupgradeconsiderations)  
+6. [Post-Upgrade Considerations](#postupgradeconsiderations)  
 
 # vSphere 8 & 8u1 Announcements & Documentation <a name="v8announcementsanddocs"></a>  
 
@@ -353,8 +353,9 @@ _Update 2 adds dvSwitch configuration to DKVS._
 **vSAN Max enables a new, optional disaggregated storage deployment model built on vSAN Express Storage Architecture**  
 - Distributed scale out storage
 <img width="740" alt="vSAN Max cluster providing storage" src="/images/Introducing-vSAN-Max-Figure-02.png">  
+
 - Shared storage for different use cases
-<img width="740" alt="vSAN Max use cases" src="/images/Introducing-vSAN-Max-Figure-05.png">
+<img width="1000" alt="vSAN Max use cases" src="/images/Introducing-vSAN-Max-Figure-05.png">
 
 
 ## Resource Management <a name="resourcemgmt"></a> 
