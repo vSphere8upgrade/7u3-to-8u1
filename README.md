@@ -5,16 +5,17 @@
    b. [General Documentation](#generaldocumentation)  
    c. [Useful Links](#usefullinks)  
 2. [vSphere 8 & 8u1 New Features](#newfeatures)  
-   a. [Highlights from vCenter & ESXi 8u1 Release Notes](#highlightsreleasenotes)  
-   b. [vSphere Distributed Services Engine](#vspheredistributedservicesengine)  
-   c. [vSphere with Tanzu](#vspheretanzu)  
-   d. [Lifecycle Management](#lifecyclemgmt)  
-   e. [Artificial Intelligence & Machine Learning](#aiml)  
-   f. [Guest OS & Workloads](#osworkloads)  
-   g. [Supercharge Workloads](#superchargeworkloads)  
-   h. [vSAN 8 Express Storage Architecture (ESA)](#vsan8esa)  
-   i. [Resource Management](#resourcemgmt)  
-   j. [Security & Compliance](#seccompliance)  
+   a. [Highlights from vCenter & ESXi 8u1 Release Notes](#highlightsreleasenotes)
+   b. [Highlights from vCenter & ESXi 8U2 Release Notes](#U2highlightsreleasenotes) 
+   c. [vSphere Distributed Services Engine](#vspheredistributedservicesengine)  
+   d. [vSphere with Tanzu](#vspheretanzu)  
+   e. [Lifecycle Management](#lifecyclemgmt)  
+   f. [Artificial Intelligence & Machine Learning](#aiml)  
+   g. [Guest OS & Workloads](#osworkloads)  
+   h. [Supercharge Workloads](#superchargeworkloads)  
+   i. [vSAN 8 Express Storage Architecture (ESA)](#vsan8esa)  
+   j. [Resource Management](#resourcemgmt)  
+   k. [Security & Compliance](#seccompliance)  
 4. [vSphere 8u1 Upgrade Tips](#8u1upgradetips)  
    a. [TAM Customer Webinars](#tamcustomerwebinars)  
    b. [Important Dates](#importantdates)  
@@ -200,6 +201,27 @@ vSphere 8.0 Update 1 also extends NVMe functionality by adding support for third
 - This release resolves CVE-2023-1017. VMware has evaluated the severity of this issue to be in the low severity range with a maximum CVSSv3 base score of 3.3  
 - This release resolves CVE-2023-1018. VMware has evaluated the severity of this issue to be in the low severity range with a maximum CVSSv3 base score of 3.3  
 
+## Highlights from vCenter & ESXi 8u2 Release Notes <a name="U2highlightsreleasenotes"></a>
+
+- Reduced Downtime Upgrade for vCenter
+- vCenter Certificates do not require service restarts.
+- dvSwitch configuration added to Distributed Key-Value store
+- Identity Federation with Azure AD
+- NVIDIA BlueField-2 DPU on Fujitsu
+- vSphere Quick Boot for more servers 
+- Support for Graphics and AI/ML workloads on Intel ATS-M 
+- Enhanced ESXi CPU Scheduler for high core count CPUs    
+- Support 8 100GB NIC ports on a single host (Broadcom and Mellanox NICs)
+- Virtual hardware version 21:
+	- 16vGPU per VM
+	- 256 vNVMe disks per VM
+	- NVMe 1.3 support for Win 11 & Server 2022
+	- NVMe support for WSFC     
+- Hot-extend a shared Virtual Volumes Disk vSphere 8.0 Update 2. 
+- Use vNVME controller for WSFC on vHardware v21
+- Read-only mode for attached virtual disks     
+- Support for multiple TCP connections on a single NFS v3 volume
+
 
 ## vSphere Distributed Services Engine <a name="vspheredistributedservicesengine"></a>  
 
@@ -275,6 +297,9 @@ In vSphere 8, an additional instance of ESXi is installed directly on the Data P
 
 - Virtual Hardware Version 20  
 <img width="897" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/8c7d29d4-1181-4c5f-9b73-d2fc40c2a14a">  
+
+- Virtual Hardware Version 21
+<img width="900" alt="Virtual Hardware version 21" src="/images/vhw-21.png">
 
 - Virtual TPM Provisioning Policy - Deploy Windows 11 at Scale  
 <img width="915" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/3f2b4248-0a88-4e3d-a242-5cee0fe22c68">  
