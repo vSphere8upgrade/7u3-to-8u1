@@ -14,8 +14,9 @@
    g. [Guest OS & Workloads](#osworkloads)  
    h. [Supercharge Workloads](#superchargeworkloads)  
    i. [vSAN 8 Express Storage Architecture (ESA)](#vsan8esa)  
-   j. [Resource Management](#resourcemgmt)  
-   k. [Security & Compliance](#seccompliance)  
+   j. [vSAN Max](#vsanmax)  
+   k. [Resource Management](#resourcemgmt)  
+   l. [Security & Compliance](#seccompliance)  
 4. [vSphere 8u1 Upgrade Tips](#8u1upgradetips)  
    a. [TAM Customer Webinars](#tamcustomerwebinars)  
    b. [Important Dates](#importantdates)  
@@ -76,14 +77,26 @@
   <tr>
     <td class="tg-0lax">What's New in vSphere 8 Update 1</td>
     <td class="tg-0lax">https://core.vmware.com/resource/whats-new-vsphere-8-update-1</td>
-  </tr>
   <tr>
     <td class="tg-0lax">[Video] vSphere 8 Update 1 What's New</td>
     <td class="tg-0lax">https://core.vmware.com/?share=video4042&amp;title=video-vsphere-8-update-1-whats-new</td>
   </tr>
+  </tr>
+    <tr>
+    <td class="tg-0lax">Introducing vSphere 8 Update 2</td>
+    <td class="tg-0lax">https://blogs.vmware.com/vsphere/2023/03/announcing-vsphere-8-update-1.html</td>
+  </tr>
+    <tr>
+    <td class="tg-0lax">What's New in vSphere 8 Update 2</td>
+    <td class="tg-0lax">https://core.vmware.com/resource/whats-new-vsphere-8-update-2</td>
+  </tr>
+   <tr>
+    <td class="tg-0lax">[Video] vSphere 8 Update 2 What's New</td>
+    <td class="tg-0lax">https://youtu.be/WEfbR7NPcI0</td>
+  </tr>
   <tr>
-    <td class="tg-0lax">What's New with vSphere 8 (and 8u1) Core Storage</td>
-    <td class="tg-0lax">https://core.vmware.com/resource/whats-new-vsphere-8-core-storage#section1</td>
+    <td class="tg-0lax">What's New with vSphere 8 (8.0, 8u1, & 8u2) Core Storage</td>
+    <td class="tg-0lax">https://core.vmware.com/resource/whats-new-vsphere-8-core-storage</td>
   </tr>
 </tbody>
 </table>
@@ -265,7 +278,8 @@ In vSphere 8, an additional instance of ESXi is installed directly on the Data P
 <img width="586" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/6d54bb6a-3844-4513-a6b8-cf183b4d91d8"> <img width="310" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/99013fcb-3e37-4db6-8f66-45ede84e634b">  
 <img width="586" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/06a31e6e-5baf-4611-94eb-fc7c015de755"> <img width="310" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/6aa295a9-7800-4532-97f3-aea46d9df2c6">  
 
-- Enhanced Recovery of vCenter - Recover vCenter without data loss & Reconcile Cluster Membership After Restore  
+- Enhanced Recovery of vCenter - Recover vCenter without data loss & Reconcile Cluster Membership After Restore.  
+_Update 2 adds dvSwitch configuration to DKVS._  
 <img width="440" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/1eca31e3-2724-49f3-bd32-df3145a4e6a7"> <img width="310" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/3f55ceb3-12f9-4692-ae3a-845997f13bc0">  
 <img width="373" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/75a423e5-7ee6-428c-ad94-72eb822fa14c"> <img width="310" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/349ebed1-bf5c-4a99-8bb0-2b64073f996d">  
 
@@ -335,6 +349,14 @@ In vSphere 8, an additional instance of ESXi is installed directly on the Data P
 - A New Way to Process and Store Data Efficiently
 <img width="850" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/566af2d6-b9ef-42f7-a63b-2f90a1a8b0d5">  
 
+## vSAN Max <a name="vsanmax"></a>
+**vSAN Max enables a new, optional disaggregated storage deployment model built on vSAN Express Storage Architecture**  
+- Distributed scale out storage
+<img width="740" alt="vSAN Max cluster providing storage" src="/images/Introducing-vSAN-Max-Figure-02.png">  
+- Shared storage for different use cases
+<img width="740" alt="vSAN Max use cases" src="/images/Introducing-vSAN-Max-Figure-05.png">
+
+
 ## Resource Management <a name="resourcemgmt"></a> 
 
 - Enhanced DRS Performance - vSphere Memory Monitoring and Remediation v2 (vMMR2)
@@ -359,7 +381,7 @@ Uses Memory Stats for better VM placement
 - vSphere Fault Tolerance with vTPM  
 - vSphere NFS Datastore VMkernel Binding  
 - More Secure Product Defaults
-- vCenter Server Direct Federation with Okta Identity Providers  
+- vCenter Server Direct Federation with Okta & Azure AD Identity Providers  
 
 <img width="802" alt="image" src="https://github.com/vSphere8upgrade/7u3-to-8u1/assets/135248193/74979d47-59b2-401c-9035-d0f26b69f617">  
 
@@ -400,6 +422,12 @@ https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-esxi-801-release-notes/
 
 vCenter Server 8 Update 1 Release Notes  
 https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-vcenter-server-801-release-notes/index.html
+
+vSphere ESXi 8 Update 2 Release Notes  
+https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-esxi-802-release-notes/index.html
+
+vCenter Server 8 Update 2 Release Notes  
+https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-vcenter-server-802-release-notes/index.html
 
 *__Note:__ There have been additional releases to vSphere and ESXi 8 u1 (ESXi - u1a, u1c; vCenter - u1a, u1b, u1c)*
 
@@ -604,4 +632,4 @@ If you created snapshots, don't hold them for too long. Snapshots can stress the
 Great resource for vSphere 8 performance:  
 https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/techpaper/performance/vsphere-esxi-vcenter-server-80-performance-best-practices.pdf  
 
-Enjoy vCenter 8u1!
+Enjoy vCenter 8u1 or 8u2!
